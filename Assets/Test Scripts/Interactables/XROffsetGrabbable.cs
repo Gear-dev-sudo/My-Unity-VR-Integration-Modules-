@@ -1,60 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-/// <summary>
-/// Copyright (c) 2022 by Richard Muthwill. Update and repost this script as you wish but leave this line as is.
-///
-/// This script will keep the object in place when grabbing. This gives the illusion of actually
-/// grabbing an object instead of it flying into the middle of the rigidbody or attach point.
-///
-/// If you are using something other than XRGrabInteractable or a script that derives from
-/// it, please change all the XRGrabInteractable to YourXRGrabInteractableDerivedClass
-///
-/// Original idea / answer from Unity Forums: https://forum.unity.com/threads/xr-rig-grab-from-touchpoint-not-rigidbody-center.879037/
-///
-/// Copy of original file: https://github.com/richardmuthwill/Unity-Snippets/blob/main/XR/XROffsetGrabbableObsolete.cs
-/// </summary>
-
-[DisallowMultipleComponent]
-[RequireComponent(typeof(XRGrabInteractable))]
-public class XROffsetGrabbable : MonoBehaviour
+public class OffsetInteractable : XRGrabInteractable
 {
-    XRGrabInteractable grabInteractable;
-    Transform attachPoint;
-
-    void Awake()
+    protected override void Awake()
     {
-        grabInteractable = GetComponent<XRGrabInteractable>();
+        base.Awake();
+        CreateAttachTransform();
+    }
+    protected override void OnSelectEntering(SelectEnterEventArgs args)
+    {
+        base.OnSelectEntering(args);
+        MatchAttachPoint(args.interactorObject);
+    }
 
-        if (grabInteractable.attachTransform == null)
+    protected void MatchAttachPoint(IXRInteractor interactor)
+    {
+        if (IsFirstSelecting(interactor))
         {
-            GameObject newGO = new GameObject("Attach Transform of " + name);
-            Transform newTransform = newGO.transform;
-            newTransform.parent = transform;
-
-            grabInteractable.attachTransform = newTransform;
-            attachPoint = newTransform;
+            bool isDirect = interactor is XRDirectInteractor;
+            attachTransform.position = isDirect ? interactor.GetAttachTransform(this).position : transform.position;
+            attachTransform.rotation = isDirect ? interactor.GetAttachTransform(this).rotation : transform.rotation;
         }
-        else
+    }
+
+    private bool IsFirstSelecting(IXRInteractor interactor)
+    {
+        return interactor == firstInteractorSelecting;
+    }
+
+    private void CreateAttachTransform()
+    {
+        if (attachTransform == null)
         {
-            attachPoint = grabInteractable.attachTransform;
+            GameObject createdAttachTransform = new GameObject();
+            createdAttachTransform.transform.parent = this.gameObject.transform;
+            attachTransform = createdAttachTransform.transform;
         }
-    }
-
-    void OnEnable()
-    {
-        grabInteractable.selectEntered.AddListener(XRSelectEnter);
-    }
-
-    void OnDisable()
-    {
-        grabInteractable.selectEntered.RemoveListener(XRSelectEnter);
-    }
-
-    public void XRSelectEnter(SelectEnterEventArgs selectEnterEventArgs)
-    {
-        attachPoint.position = selectEnterEventArgs.interactorObject.transform.position;
-
-        attachPoint.rotation = selectEnterEventArgs.interactorObject.transform.rotation;
     }
 }

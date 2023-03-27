@@ -10,8 +10,11 @@ public class MyGrabDirectInteractable : XRBaseInteractable
     public Vector3 attachPositionOffset;
     public Vector3 attachRotationOffset;
 
-    private XRBaseInteractor _interactor;
+    private IXRInteractor _interactor;
     private Quaternion _attachInitialRotation;
+    private Rigidbody _Rigidbody;
+    
+
 
     protected override void Awake()
     {
@@ -20,21 +23,33 @@ public class MyGrabDirectInteractable : XRBaseInteractable
         {
             attachTransform = transform;
         }
+        _Rigidbody = GetComponent<Rigidbody>();
+        if (_Rigidbody == null)
+            Debug.LogError("Interactable does not have a required Rigidbody.", this);
         _attachInitialRotation = attachTransform.localRotation;
+        
+
+
     }
 
    
 
-    protected override void OnSelectEntered(SelectEnterEventArgs args)
+    protected override void OnSelectEntering(SelectEnterEventArgs args)
     {
-        base.OnSelectEntered(args);
-        _interactor = (XRBaseInteractor)args.interactorObject;
+        base.OnSelectEntering(args);
+        _interactor = args.interactorObject;
+
+        //test
+        Debug.Log("_interactor is XRDirectInteractor"+(_interactor is XRDirectInteractor));
+        Debug.Log("_interactor is XRRayInteractor"+(_interactor is XRRayInteractor));
+        //test
+
         Attach();
     }
 
-    protected override void OnSelectExited(SelectExitEventArgs args)
+    protected override void OnSelectExiting(SelectExitEventArgs args)
     {
-        base.OnSelectExited(args);
+        base.OnSelectExiting(args);
         Detach();
         _interactor = null;
     }
@@ -60,17 +75,26 @@ public class MyGrabDirectInteractable : XRBaseInteractable
         }
     }
 }
-#if UNITY_EDITOR
 
+
+
+#if UNITY_EDITOR
 [CustomEditor(typeof(MyGrabDirectInteractable))]
 public class MyGrabInteractableEditor : Editor
 {
+    protected SerializedProperty m_InteractionLayers;
+    public static readonly GUIContent interactionLayerSetting = EditorGUIUtility.TrTextContent("Interaction Layer Mask", "Allows interaction with Interactors whose Interaction Layer Mask overlaps with any Layer in this Interaction Layer Mask.");
+
     public override void OnInspectorGUI()
     {
-        
+        EditorGUILayout.LabelField("Interaction Layer", EditorStyles.boldLabel);
+        m_InteractionLayers = serializedObject.FindProperty("m_InteractionLayers");
+        serializedObject.Update();
+
+        serializedObject.ApplyModifiedProperties();
 
         MyGrabDirectInteractable interactable = (MyGrabDirectInteractable)target;
-
+        EditorGUILayout.PropertyField(m_InteractionLayers, interactionLayerSetting);
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Attach", EditorStyles.boldLabel);
         interactable.attachTransform = (Transform)EditorGUILayout.ObjectField("Attach Transform", interactable.attachTransform, typeof(Transform), true);
