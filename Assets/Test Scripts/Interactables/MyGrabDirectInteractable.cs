@@ -13,26 +13,53 @@ public class MyGrabDirectInteractable : XRBaseInteractable
     private IXRInteractor _interactor;
     private Quaternion _attachInitialRotation;
     private Rigidbody _Rigidbody;
-    
+    Transform attachPoint;
 
 
     protected override void Awake()
     {
+
         base.Awake();
-        if (attachTransform == null)
+        if (this.attachTransform == null)
         {
-            attachTransform = transform;
+            GameObject newGO = new GameObject("Attach Transform of " + name);
+            Transform newTransform = newGO.transform;
+            newTransform.parent = gameObject.transform;
+
+            this.attachTransform = newTransform;
+            attachPoint = newTransform;
         }
-        _Rigidbody = GetComponent<Rigidbody>();
-        if (_Rigidbody == null)
-            Debug.LogError("Interactable does not have a required Rigidbody.", this);
+
+        else
+        {
+            attachPoint = this.attachTransform;
+        }
+
+
+
+
         _attachInitialRotation = attachTransform.localRotation;
         
 
 
     }
 
-   
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        this.selectEntered.AddListener(XRSelectEnter);
+    }
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        this.selectEntered.RemoveListener(XRSelectEnter);
+    }
+    public void XRSelectEnter(SelectEnterEventArgs selectEnterEventArgs)
+    {
+        attachPoint.position = selectEnterEventArgs.interactorObject.transform.position;
+
+        attachPoint.rotation = selectEnterEventArgs.interactorObject.transform.rotation;
+    }
 
     protected override void OnSelectEntering(SelectEnterEventArgs args)
     {
