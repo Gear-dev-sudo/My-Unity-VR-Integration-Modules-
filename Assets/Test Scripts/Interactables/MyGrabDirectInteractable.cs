@@ -95,6 +95,7 @@ public class MyGrabDirectInteractable : XRBaseInteractable
             //((XRDirectInteractor)(args.interactorObject)).attachTransform = attachTransform;
             // Debug.LogWarning(""+ ((XRDirectInteractor)(args.interactorObject)).attachTransform.position+ attachTransform.position);
             //UpdateInteractorLocalPose(args.interactorObject);
+            args.interactableObject.transform.position = (args.interactorObject).transform.position;
             args.interactableObject.transform.Translate(args.interactableObject.transform.position - attachPoint.position);
             
 
