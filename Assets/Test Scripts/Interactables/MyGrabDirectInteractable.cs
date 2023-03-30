@@ -69,7 +69,7 @@ public class MyGrabDirectInteractable : XRBaseInteractable
     }
     public void XRSelectEnter(SelectEnterEventArgs selectEnterEventArgs)
     {
-        Debug.LogWarning("XR SEL ENTER");
+        //Debug.LogWarning("XR SEL ENTER");
         if (!dualAttachCheckbox&&dynamicAttachCheckbox)
         { attachPoint.position = selectEnterEventArgs.interactorObject.transform.position;
 
@@ -79,7 +79,7 @@ public class MyGrabDirectInteractable : XRBaseInteractable
         {
             if (selectEnterEventArgs.interactorObject.transform.CompareTag("Left Hand"))
             {
-                Debug.LogWarning("Left Hand");
+              //  Debug.LogWarning("Left Hand");
               attachPoint = h_leftAttachTransform;
             }
             else if (selectEnterEventArgs.interactorObject.transform.CompareTag("Right Hand"))
@@ -105,8 +105,8 @@ public class MyGrabDirectInteractable : XRBaseInteractable
             //UpdateInteractorLocalPose(args.interactorObject);
             args.interactableObject.transform.position = (args.interactorObject).transform.position;
 
-            Debug.LogWarning(attachPoint.position);
-            Debug.LogWarning("Moving"+ (args.interactableObject.transform.position - attachPoint.position));
+          // Debug.LogWarning(attachPoint.position);
+           // Debug.LogWarning("Moving"+ (args.interactableObject.transform.position - attachPoint.position));
             args.interactableObject.transform.Translate(args.interactableObject.transform.position - attachPoint.position);
             
 
