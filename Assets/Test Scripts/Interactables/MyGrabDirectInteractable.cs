@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.XR.Interaction.Toolkit;
 
+
+[RequireComponent(typeof(Collider))]
 public class MyGrabDirectInteractable : XRBaseInteractable
 {
     //Attach TransForms
@@ -24,14 +26,20 @@ public class MyGrabDirectInteractable : XRBaseInteractable
 
     protected override void Awake()
     {
-
+        
         base.Awake();
+        if(dynamicAttachCheckbox)
+        {
+            this.attachTransform = null;
+        }
+
+
         if (this.attachTransform == null&&!dualAttachCheckbox)
         {
             GameObject newGO = new GameObject("Attach Transform of " + name);
             Transform newTransform = newGO.transform;
             newTransform.parent = gameObject.transform;
-
+            newTransform.localPosition = Vector3.zero;
             this.attachTransform = newTransform;
             attachPoint = newTransform;
         }  
@@ -96,6 +104,9 @@ public class MyGrabDirectInteractable : XRBaseInteractable
             // Debug.LogWarning(""+ ((XRDirectInteractor)(args.interactorObject)).attachTransform.position+ attachTransform.position);
             //UpdateInteractorLocalPose(args.interactorObject);
             args.interactableObject.transform.position = (args.interactorObject).transform.position;
+
+            Debug.LogWarning(attachPoint.position);
+            Debug.LogWarning("Moving"+ (args.interactableObject.transform.position - attachPoint.position));
             args.interactableObject.transform.Translate(args.interactableObject.transform.position - attachPoint.position);
             
 
@@ -107,21 +118,7 @@ public class MyGrabDirectInteractable : XRBaseInteractable
 
     Vector3 InteractorLocalPosition;
     Quaternion InteractorLocalRotation;
-    void UpdateInteractorLocalPose(IXRInteractor interactor)
-    {
-        // In order to move the Interactable to the Interactor we need to
-        // calculate the Interactable attach point in the coordinate system of the
-        // Interactor's attach point.
-        var thisAttachTransform = GetAttachTransform(interactor);
-        var attachOffset = transform.position - thisAttachTransform.position;
-        var localAttachOffset = thisAttachTransform.InverseTransformDirection(attachOffset);
-
-        InteractorLocalPosition = localAttachOffset;
-        InteractorLocalRotation = Quaternion.Inverse(Quaternion.Inverse(transform.rotation) * thisAttachTransform.rotation);
-        //interactor.transform.Translate(attachOffset);
-        //Debug.LogWarning("MOVING"+attachOffset);
-        
-    }
+   
 
  
     protected override void OnSelectExiting(SelectExitEventArgs args)
