@@ -26,7 +26,7 @@ namespace my_unity_integration
 
             Quaternion current = transform.localRotation;
 
-            transform.localRotation = Quaternion.Slerp(current, rotation, Time.deltaTime);
+            transform.localRotation = Quaternion.Slerp(current, rotation, Time.fixedDeltaTime);
 
         }
     }
