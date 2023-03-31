@@ -5,46 +5,50 @@ using UnityEngine.InputSystem;
 /// <summary>
 /// Checks for button input on an input action
 /// </summary>
-public class OnControllerButtonPress : MonoBehaviour
+/// 
+namespace my_unity_integration
 {
-    [Tooltip("Actions to check")]
-    public InputAction action = null;
-
-    // When the button is pressed
-    public UnityEvent OnPress = new UnityEvent();
-
-    // When the button is released
-    public UnityEvent OnRelease = new UnityEvent();
-
-    private void Awake()
+    public class OnControllerButtonPress : MonoBehaviour
     {
-        action.started += Pressed;
-        action.canceled += Released;
-    }
+        [Tooltip("Actions to check")]
+        public InputAction action = null;
 
-    private void OnDestroy()
-    {
-        action.started -= Pressed;
-        action.canceled -= Released;
-    }
+        // When the button is pressed
+        public UnityEvent OnPress = new UnityEvent();
 
-    private void OnEnable()
-    {
-        action.Enable();
-    }
+        // When the button is released
+        public UnityEvent OnRelease = new UnityEvent();
 
-    private void OnDisable()
-    {
-        action.Disable();
-    }
+        private void Awake()
+        {
+            action.started += Pressed;
+            action.canceled += Released;
+        }
 
-    private void Pressed(InputAction.CallbackContext context)
-    {
-        OnPress.Invoke();
-    }
+        private void OnDestroy()
+        {
+            action.started -= Pressed;
+            action.canceled -= Released;
+        }
 
-    private void Released(InputAction.CallbackContext context)
-    {
-        OnRelease.Invoke();
+        private void OnEnable()
+        {
+            action.Enable();
+        }
+
+        private void OnDisable()
+        {
+            action.Disable();
+        }
+
+        private void Pressed(InputAction.CallbackContext context)
+        {
+            OnPress.Invoke();
+        }
+
+        private void Released(InputAction.CallbackContext context)
+        {
+            OnRelease.Invoke();
+        }
     }
 }
