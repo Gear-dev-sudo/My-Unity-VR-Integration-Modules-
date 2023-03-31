@@ -181,9 +181,9 @@ namespace my_unity_integration
 
 #if UNITY_EDITOR
     [CustomEditor(typeof(MyGrabDirectInteractable))]
-    public class MyGrabInteractableEditor : Editor
+    public class MyGrabInteractableEditor : UnityEditor.XR.Interaction.Toolkit.XRBaseInteractableEditor
     {
-        protected SerializedProperty m_InteractionLayers;
+        //protected SerializedProperty m_InteractionLayers;
         public static readonly GUIContent interactionLayerSetting = EditorGUIUtility.TrTextContent("Interaction Layer Mask", "Allows interaction with Interactors whose Interaction Layer Mask overlaps with any Layer in this Interaction Layer Mask.");
 
         public override void OnInspectorGUI()
@@ -217,7 +217,11 @@ namespace my_unity_integration
                 }
                 interactable.attachPositionOffset = EditorGUILayout.Vector3Field("Position Offset", interactable.attachPositionOffset);
             }
+            DrawInteractableEvents();
+            serializedObject.ApplyModifiedProperties();//Hook Into the Interactable Events
+
         }
+
     }
 #endif
 }
