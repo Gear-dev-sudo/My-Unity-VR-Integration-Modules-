@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="oWx1CMlj1S1pF4CIYpkc" name="Page-1">
-        <mxGraphModel dx="896" dy="951" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+        <mxGraphModel dx="825" dy="873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -68,7 +68,7 @@
                 <mxCell id="16" value="MyGrabDirectInteractable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
                     <mxGeometry x="880" y="550" width="150" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="Only Takes in Interactions from DirectInteractors&lt;br&gt;&lt;b&gt;with Dynamic Attach Point or Two Attach Points For both Left and Right Hand&amp;nbsp;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                <mxCell id="18" value="Only Takes in Interactions from DirectInteractors&lt;br&gt;&lt;b&gt;with Dynamic Attach Point or Two Attach Points For both Left and Right Hand +Throwable&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="880" y="630" width="160" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
@@ -202,8 +202,11 @@
                 <mxCell id="63" value="Update the camera position in each frame, rather than during only position change" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1075" y="1000" width="115" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="65" value="Custom Character&lt;br&gt;Controller Driver" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                <mxCell id="65" value="Custom Character&lt;br&gt;Controller Driver" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
                     <mxGeometry x="960" y="930" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/manual/images/class-hierarchy.svg;imageBackground=#FFFFFF;fillStyle=solid;" vertex="1" parent="1">
+                    <mxGeometry x="549.6800000000001" y="1204.5" width="630.64" height="171" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

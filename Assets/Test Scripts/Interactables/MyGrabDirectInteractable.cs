@@ -18,16 +18,20 @@ namespace my_unity_integration
         public Vector3 attachPositionOffset;
         public Vector3 attachRotationOffset;
 
+       
+
         private IXRInteractor _interactor;
         private Quaternion _attachInitialRotation;
 
         Transform attachPoint;
         public bool dualAttachCheckbox = false;
         public bool dynamicAttachCheckbox = false;
-
+        public bool forceDetachGravityCheckbox = false;
+        public bool OriginalGravityCheckbox = false;
+        Rigidbody rb;
         protected override void Awake()
         {
-
+            rb = GetComponent<Rigidbody>();
             base.Awake();
             if (dynamicAttachCheckbox)
             {
@@ -70,6 +74,8 @@ namespace my_unity_integration
         }
         public void XRSelectEnter(SelectEnterEventArgs selectEnterEventArgs)
         {
+            Rigidbody rb = GetComponent<Rigidbody>();
+            rb.useGravity = false;
             //Debug.LogWarning("XR SEL ENTER");
             if (!dualAttachCheckbox && dynamicAttachCheckbox)
             {
@@ -93,25 +99,38 @@ namespace my_unity_integration
 
 
         }
+        Vector3 velo;
+        private Vector3 angVelo;
+        Vector3 lastTrans;
+        Quaternion _lastRotation;
+        void FixedUpdate()
+        {
 
+            velo = Vector3.ClampMagnitude((this.transform.position - lastTrans) /(1.5f * (Time.fixedDeltaTime)),50);
+
+            Quaternion deltaRotation = transform.rotation * Quaternion.Inverse(_lastRotation);
+            deltaRotation.ToAngleAxis(out float angle, out Vector3 axis);
+            angVelo = angle * Mathf.Deg2Rad * axis / Time.fixedDeltaTime;
+            _lastRotation = transform.rotation;
+
+           // Debug.LogWarning("update velo" + velo);
+         //   Debug.LogWarning("update angvelo" + angVelo);
+            lastTrans = this.transform.position;
+        }
         protected override void OnSelectEntered(SelectEnterEventArgs args)
         {
+           
+            
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
             base.OnSelectEntered(args);
             _interactor = args.interactorObject;
+            
             if (!dynamicAttachCheckbox)
             {
-                //Debug.LogWarning("" + ((XRDirectInteractor)(args.interactorObject)).attachTransform.position + attachTransform.position);
-
-                //((XRDirectInteractor)(args.interactorObject)).attachTransform = attachTransform;
-                // Debug.LogWarning(""+ ((XRDirectInteractor)(args.interactorObject)).attachTransform.position+ attachTransform.position);
-                //UpdateInteractorLocalPose(args.interactorObject);
                 args.interactableObject.transform.position = (args.interactorObject).transform.position;
 
-                // Debug.LogWarning(attachPoint.position);
-                // Debug.LogWarning("Moving"+ (args.interactableObject.transform.position - attachPoint.position));
                 args.interactableObject.transform.Translate(args.interactableObject.transform.position - attachPoint.position);
-
-
 
             }
 
@@ -123,11 +142,36 @@ namespace my_unity_integration
 
 
 
+        protected override void OnSelectExited(SelectExitEventArgs args)
+        {
+            base.OnSelectExited(args);
+            Rigidbody rb = GetComponent<Rigidbody>();
+            
+
+            if (rb != null && throwOnDetach)
+            {
+                if(forceDetachGravityCheckbox)
+                    rb.useGravity = true;
+
+
+                rb.velocity = velo;
+                rb.angularVelocity = angVelo;
+
+            
+            }
+          
+        }
+
+ 
         protected override void OnSelectExiting(SelectExitEventArgs args)
         {
+    
             base.OnSelectExiting(args);
             Detach();
+
             _interactor = null;
+
+            
         }
 
         private void Attach()
@@ -143,36 +187,30 @@ namespace my_unity_integration
             }
         }
 
+
+        bool throwOnDetach=true;
+
+        /// <summary>
+        /// 
+        /// </summary>
         private void Detach()
         {
+
+
             if (_interactor is XRDirectInteractor)
             {
                 // 将游戏对象从交互器上分离
                 transform.SetParent(null);
                 attachTransform.localRotation = _attachInitialRotation;
+
+
             }
+
         }
 
 
 
-        Vector3 GetWorldAttachPosition(IXRInteractor interactor)
-        {
-            var interactorAttachTransform = interactor.GetAttachTransform(this);
-            return interactorAttachTransform.position + interactorAttachTransform.rotation * InteractorLocalPosition;
-        }
 
-        /// <summary>
-        /// Calculates the world rotation to place this object at when selected.
-        /// </summary>
-        /// <param name="interactor">Interactor that is initiating the selection.</param>
-        /// <returns>Returns the attach rotation in world space.</returns>
-        Quaternion GetWorldAttachRotation(IXRInteractor interactor)
-        {
-
-            var interactorAttachTransform = interactor.GetAttachTransform(this);
-            return interactorAttachTransform.rotation * InteractorLocalRotation;
-        }
-    }
 
 
 
@@ -180,48 +218,52 @@ namespace my_unity_integration
 
 
 #if UNITY_EDITOR
-    [CustomEditor(typeof(MyGrabDirectInteractable))]
-    public class MyGrabInteractableEditor : UnityEditor.XR.Interaction.Toolkit.XRBaseInteractableEditor
-    {
-        //protected SerializedProperty m_InteractionLayers;
-        public static readonly GUIContent interactionLayerSetting = EditorGUIUtility.TrTextContent("Interaction Layer Mask", "Allows interaction with Interactors whose Interaction Layer Mask overlaps with any Layer in this Interaction Layer Mask.");
-
-        public override void OnInspectorGUI()
+        [CustomEditor(typeof(MyGrabDirectInteractable))]
+        public class MyGrabInteractableEditor : UnityEditor.XR.Interaction.Toolkit.XRBaseInteractableEditor
         {
-            EditorGUILayout.LabelField("Interaction Layer", EditorStyles.boldLabel);
-            m_InteractionLayers = serializedObject.FindProperty("m_InteractionLayers");
-            serializedObject.Update();
+            //protected SerializedProperty m_InteractionLayers;
+            public static readonly GUIContent interactionLayerSetting = EditorGUIUtility.TrTextContent("Interaction Layer Mask", "Allows interaction with Interactors whose Interaction Layer Mask overlaps with any Layer in this Interaction Layer Mask.");
 
-            serializedObject.ApplyModifiedProperties();
+            public override void OnInspectorGUI()
+            {
+                EditorGUILayout.LabelField("Interaction Layer", EditorStyles.boldLabel);
+                m_InteractionLayers = serializedObject.FindProperty("m_InteractionLayers");
+                serializedObject.Update();
 
-            MyGrabDirectInteractable interactable = (MyGrabDirectInteractable)target;
-            EditorGUILayout.PropertyField(m_InteractionLayers, interactionLayerSetting);
-            EditorGUILayout.Space();
-            EditorGUILayout.LabelField("Attach", EditorStyles.boldLabel);
-            interactable.dualAttachCheckbox = EditorGUILayout.Toggle("Dual Attach", interactable.dualAttachCheckbox);
-            interactable.dynamicAttachCheckbox = EditorGUILayout.Toggle("Dynamic Attach", interactable.dynamicAttachCheckbox);
-            if (interactable.dualAttachCheckbox)
-            {
-                EditorGUILayout.LabelField("Left/Right Hand Attach Points", EditorStyles.boldLabel);
-                interactable.h_leftAttachTransform = (Transform)EditorGUILayout.ObjectField("Left Hand Attach Transform", interactable.h_leftAttachTransform, typeof(Transform), true);
-                interactable.h_rightAttachTransform = (Transform)EditorGUILayout.ObjectField("Right Hand Attach Transform", interactable.h_rightAttachTransform, typeof(Transform), true);
-                // Add other menu items here
-            }
-            if (!interactable.dualAttachCheckbox)
-            {
-                if (!interactable.dynamicAttachCheckbox)
+                serializedObject.ApplyModifiedProperties();
+
+                MyGrabDirectInteractable interactable = (MyGrabDirectInteractable)target;
+                EditorGUILayout.PropertyField(m_InteractionLayers, interactionLayerSetting);
+                EditorGUILayout.Space();
+                EditorGUILayout.LabelField("Attach", EditorStyles.boldLabel);
+                interactable.dualAttachCheckbox = EditorGUILayout.Toggle("Dual Attach", interactable.dualAttachCheckbox);
+                
+                interactable.forceDetachGravityCheckbox = EditorGUILayout.Toggle("Force Gravity On Detach", interactable.forceDetachGravityCheckbox);
+                interactable.dynamicAttachCheckbox = EditorGUILayout.Toggle("Dynamic Attach", interactable.dynamicAttachCheckbox);
+                interactable.throwOnDetach = EditorGUILayout.Toggle("Throw On Detach", interactable.throwOnDetach);
+                if (interactable.dualAttachCheckbox)
                 {
-                    interactable.attachTransform = (Transform)EditorGUILayout.ObjectField("Attach Transform", interactable.attachTransform, typeof(Transform), true);
-
-                    interactable.attachRotationOffset = EditorGUILayout.Vector3Field("Rotation Offset", interactable.attachRotationOffset);
+                    EditorGUILayout.LabelField("Left/Right Hand Attach Points", EditorStyles.boldLabel);
+                    interactable.h_leftAttachTransform = (Transform)EditorGUILayout.ObjectField("Left Hand Attach Transform", interactable.h_leftAttachTransform, typeof(Transform), true);
+                    interactable.h_rightAttachTransform = (Transform)EditorGUILayout.ObjectField("Right Hand Attach Transform", interactable.h_rightAttachTransform, typeof(Transform), true);
+                    // Add other menu items here
                 }
-                interactable.attachPositionOffset = EditorGUILayout.Vector3Field("Position Offset", interactable.attachPositionOffset);
+                if (!interactable.dualAttachCheckbox)
+                {
+                    if (!interactable.dynamicAttachCheckbox)
+                    {
+                        interactable.attachTransform = (Transform)EditorGUILayout.ObjectField("Attach Transform", interactable.attachTransform, typeof(Transform), true);
+
+                        interactable.attachRotationOffset = EditorGUILayout.Vector3Field("Rotation Offset", interactable.attachRotationOffset);
+                    }
+                    interactable.attachPositionOffset = EditorGUILayout.Vector3Field("Position Offset", interactable.attachPositionOffset);
+                }
+                DrawInteractableEvents();
+                serializedObject.ApplyModifiedProperties();//Hook Into the Interactable Events
+
             }
-            DrawInteractableEvents();
-            serializedObject.ApplyModifiedProperties();//Hook Into the Interactable Events
 
         }
-
-    }
 #endif
+    }
 }
