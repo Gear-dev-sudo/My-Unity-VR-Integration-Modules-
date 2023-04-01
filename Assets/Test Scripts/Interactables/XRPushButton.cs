@@ -12,7 +12,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
     public class XRPushButton : XRBaseInteractable
     {
-
+     
+        //Customizable Event 
         public UnityEvent OnPushed;
 
         [SerializeField] private float minimalPushDepth;
