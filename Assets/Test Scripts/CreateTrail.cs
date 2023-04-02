@@ -4,48 +4,70 @@
 /// This script creates a trail at the location of a gameobject with a particular width and color.
 /// </summary>
 
-public class CreateTrail : MonoBehaviour
+namespace my_unity_integration
 {
-    public GameObject trailPrefab = null;
 
-    private float width = 0.05f;
-    private Color color = Color.white;
 
-    private GameObject currentTrail = null;
-
-    public void StartTrail()
+    public class CreateTrail : MonoBehaviour
     {
-        if (!currentTrail)
+        
+        public GameObject trailPrefab = null;
+
+        private float width = 0.05f;
+        private Color color = Color.white;
+
+        private GameObject currentTrail = null;
+        public  void  Start()
         {
-            currentTrail = Instantiate(trailPrefab, transform.position, transform.rotation, transform);
-            ApplySettings(currentTrail);
+            if (trailPrefab != null)
+            {
+                TrailRenderer trailRenderer = trailPrefab.GetComponent<TrailRenderer>();
+                if (trailRenderer == null)
+                {
+                    Debug.LogError("Field does not have a TrailRenderer component!");
+                }
+                if(trailPrefab.TryGetComponent<Collider>(out Collider collider))
+                {
+                    Debug.LogWarning("Trail Prefab Collider Will Interfere with Interactor");
+                    Debug.LogWarning("Trail Prefab Collider Deleting");
+                    Destroy(collider);
+                }
+            }
         }
-    }
-
-    private void ApplySettings(GameObject trailObject)
-    {
-        TrailRenderer trailRenderer = trailObject.GetComponent<TrailRenderer>();
-        trailRenderer.widthMultiplier = width;
-        trailRenderer.startColor = color;
-        trailRenderer.endColor = color;
-    }
-
-    public void EndTrail()
-    {
-        if (currentTrail)
+        public void StartTrail()
         {
-            currentTrail.transform.parent = null;
-            currentTrail = null;
+            if (!currentTrail)
+            {
+                currentTrail = Instantiate(trailPrefab, transform.position, transform.rotation, transform);
+                ApplySettings(currentTrail);
+            }
         }
-    }
 
-    public void SetWidth(float value)
-    {
-        width = value;
-    }
+        private void ApplySettings(GameObject trailObject)
+        {
+            TrailRenderer trailRenderer = trailObject.GetComponent<TrailRenderer>();
+            trailRenderer.widthMultiplier = width;
+            trailRenderer.startColor = color;
+            trailRenderer.endColor = color;
+        }
 
-    public void SetColor(Color value)
-    {
-        color = value;
+        public void EndTrail()
+        {
+            if (currentTrail)
+            {
+                currentTrail.transform.parent = null;
+                currentTrail = null;
+            }
+        }
+
+        public void SetWidth(float value)
+        {
+            width = value;
+        }
+
+        public void SetColor(Color value)
+        {
+            color = value;
+        }
     }
 }
