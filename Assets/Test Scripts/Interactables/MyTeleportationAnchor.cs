@@ -4,7 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 namespace my_unity_integration
 {
 
-    public class TeleportationAnchor : BaseTeleportationInteractable
+    public class MyTeleportationAnchor : BaseTeleportationInteractable
     {
         [SerializeField]
         [Tooltip("The Transform that represents the teleportation destination.")]
