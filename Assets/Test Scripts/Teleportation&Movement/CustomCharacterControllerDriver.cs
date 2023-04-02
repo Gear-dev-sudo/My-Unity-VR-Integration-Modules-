@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 //ability to update the camera position in each frame, rather than during only position change
 public class CustomCharacterControllerDriver : CharacterControllerDriver
 {
-    void Update()
+    void FixedUpdate()
     {
         UpdateCharacterController();
     }
