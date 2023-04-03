@@ -87,12 +87,19 @@ namespace my_unity_integration
             {
                 if (selectEnterEventArgs.interactorObject.transform.CompareTag("Left Hand"))
                 {
-                    //  Debug.LogWarning("Left Hand");
+                    // Debug.LogWarning("Left Hand");
+                    attachTransform = h_leftAttachTransform;
                     attachPoint = h_leftAttachTransform;
+                    _attachInitialRotation = attachTransform.localRotation;
+                   // Debug.LogWarning(_attachInitialRotation+"Left");
                 }
                 else if (selectEnterEventArgs.interactorObject.transform.CompareTag("Right Hand"))
                 {
+                    //Debug.LogWarning("Right Hand");
+                    attachTransform = h_rightAttachTransform;
                     attachPoint = h_rightAttachTransform;
+                    _attachInitialRotation = attachTransform.localRotation;
+                  //  Debug.LogWarning(_attachInitialRotation+"Right");
                 }
 
             }
@@ -188,8 +195,8 @@ namespace my_unity_integration
                 // 将游戏对象附加到交互器上
                 transform.SetParent(_interactor.transform);
 
-                attachTransform.localPosition += attachPositionOffset;
-                attachTransform.localRotation = Quaternion.Euler(attachRotationOffset) * _attachInitialRotation;
+                transform.localPosition += attachPositionOffset;
+                transform.localRotation = Quaternion.Euler(attachRotationOffset) * _attachInitialRotation;
 
             }
         }
@@ -255,16 +262,16 @@ namespace my_unity_integration
                     interactable.h_rightAttachTransform = (Transform)EditorGUILayout.ObjectField("Right Hand Attach Transform", interactable.h_rightAttachTransform, typeof(Transform), true);
                     // Add other menu items here
                 }
-                if (!interactable.dualAttachCheckbox)
-                {
+               
                     if (!interactable.dynamicAttachCheckbox)
                     {
+                        if(!interactable.dualAttachCheckbox)
                         interactable.attachTransform = (Transform)EditorGUILayout.ObjectField("Attach Transform", interactable.attachTransform, typeof(Transform), true);
 
                         interactable.attachRotationOffset = EditorGUILayout.Vector3Field("Rotation Offset", interactable.attachRotationOffset);
                     }
                     interactable.attachPositionOffset = EditorGUILayout.Vector3Field("Position Offset", interactable.attachPositionOffset);
-                }
+                
                 DrawInteractableEvents();
                 serializedObject.ApplyModifiedProperties();//Hook Into the Interactable Events
 

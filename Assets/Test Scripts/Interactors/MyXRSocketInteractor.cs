@@ -81,7 +81,7 @@ namespace my_unity_integration
         {
             base.OnHoverEntering(args);
             args.interactableObject.transform.rotation = args.interactableObject.transform.rotation * attachTransform.rotation;
-            Debug.LogWarning("ROtating");
+           // Debug.LogWarning("ROtating");
         }
     }
 }
