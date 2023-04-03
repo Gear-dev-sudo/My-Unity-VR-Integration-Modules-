@@ -159,6 +159,13 @@ namespace my_unity_integration
 
             
             }
+            else if(!throwOnDetach)
+                    {
+                if (forceDetachGravityCheckbox)
+                    rb.useGravity = true;
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+            }
           
         }
 

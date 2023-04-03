@@ -30,7 +30,7 @@ namespace my_unity_integration
                 {
                     Debug.LogWarning("Trail Prefab Collider Will Interfere with Interactor");
                     Debug.LogWarning("Trail Prefab Collider Deleting");
-                    DestroyImmediate(collider);
+                    DestroyImmediate(collider,true);
                 }
             }
         }
