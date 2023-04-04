@@ -9,7 +9,7 @@ namespace my_unity_integration
     public class bodySocket
     {
         public GameObject gameObject;
-        [Range(0.01f, 1f)]
+        [Range(0.01f, 2f)]
         public float heightRatio;
     }
 
@@ -35,7 +35,7 @@ namespace my_unity_integration
         private void UpdateBodySocketHeight(bodySocket bodySocket)
         {
 
-            bodySocket.gameObject.transform.localPosition = new Vector3(bodySocket.gameObject.transform.localPosition.x, (_currentHMDlocalPosition.y * bodySocket.heightRatio), bodySocket.gameObject.transform.localPosition.z);
+            bodySocket.gameObject.transform.localPosition = new Vector3(bodySocket.gameObject.transform.localPosition.x, (_currentHMDlocalPosition.y * bodySocket.heightRatio),transform.localPosition.y);
         }
 
         private void UpdateSocketInventory()

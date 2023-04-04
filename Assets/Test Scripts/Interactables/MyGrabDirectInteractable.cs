@@ -190,7 +190,7 @@ namespace my_unity_integration
 
         private void Attach()
         {
-            if (_interactor is XRDirectInteractor)
+            if ((_interactor is XRDirectInteractor))
             {
                 // 将游戏对象附加到交互器上
                 transform.SetParent(_interactor.transform);
