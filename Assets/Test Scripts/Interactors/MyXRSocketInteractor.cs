@@ -79,11 +79,12 @@ namespace my_unity_integration
 
         protected override void OnHoverEntering(HoverEnterEventArgs args)
         {
-            if (args.interactableObject is MyGrabDirectInteractable) ;
-            args.interactableObject.transform.rotation = attachTransform.rotation;
-            base.OnHoverEntering(args);
-            args.interactableObject.transform.parent = this.transform;
-
+            if (args.interactableObject is MyGrabDirectInteractable)
+            {
+                args.interactableObject.transform.rotation = attachTransform.rotation;
+                base.OnHoverEntering(args);
+                args.interactableObject.transform.parent = this.transform;
+            }
         }
 
     }
