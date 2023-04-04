@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="oWx1CMlj1S1pF4CIYpkc" name="Page-1">
-        <mxGraphModel dx="1225" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
+        <mxGraphModel dx="2840" dy="1613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -28,6 +28,20 @@
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="955" y="330"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="107" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="106">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1145" y="330"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="109" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="108">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1335" y="320"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -72,25 +86,25 @@
                     <mxGeometry x="880" y="630" width="160" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
-                    <mxGeometry x="900" y="180" width="60" height="40" as="geometry"/>
+                    <mxGeometry x="910" y="130" width="60" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="20" value="Utility Class" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="970" y="185" width="90" height="30" as="geometry"/>
+                    <mxGeometry x="980" y="135" width="90" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
-                    <mxGeometry x="900" y="230" width="60" height="40" as="geometry"/>
+                    <mxGeometry x="910" y="180" width="60" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="Unity&lt;br&gt;XRI Provided" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=0;" parent="1" vertex="1">
-                    <mxGeometry x="970" y="235" width="90" height="30" as="geometry"/>
+                    <mxGeometry x="980" y="185" width="90" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="23" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
-                    <mxGeometry x="900" y="280" width="60" height="40" as="geometry"/>
+                    <mxGeometry x="910" y="230" width="60" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="29" value="&lt;h1&gt;Class Inheritance Of MY XR Integration Toolkit&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=default;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;gradientColor=#454545;gradientDirection=north;" parent="1" vertex="1">
                     <mxGeometry x="326" y="160" width="547" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="30" value="Classes Tailored for Specialized use in Prefabs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="970" y="285" width="100" height="30" as="geometry"/>
+                    <mxGeometry x="980" y="235" width="100" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="36" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="31" target="32" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -106,7 +120,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="72" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="31" target="70">
+                <mxCell id="72" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="31" target="70" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="620" y="900"/>
@@ -132,15 +146,15 @@
                     <mxGeometry x="555" y="720" width="190" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="40" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
-                    <mxGeometry x="1270" y="710" width="570" height="450" as="geometry"/>
+                    <mxGeometry x="1200" y="860" width="570" height="450" as="geometry"/>
                 </mxCell>
                 <mxCell id="41" value="&lt;h1&gt;Scripts For XR Origin&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" parent="1" vertex="1">
-                    <mxGeometry x="1433.75" y="740" width="290" height="60" as="geometry"/>
+                    <mxGeometry x="1363.75" y="890" width="290" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="48" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="42" target="43" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1353.75" y="900"/>
+                            <mxPoint x="1283.75" y="1050"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -150,30 +164,30 @@
                 <mxCell id="64" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;" parent="1" source="42" target="62" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1753.75" y="900"/>
+                            <mxPoint x="1683.75" y="1050"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="42" value="MonoBehaviour" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
-                    <mxGeometry x="1438.75" y="820" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="1368.75" y="970" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="43" value="Toggle Ray" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
-                    <mxGeometry x="1303.75" y="940" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="1233.75" y="1090" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="44" value="Switch between Direct and Ray Interactors" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="1296.25" y="1010" width="115" height="70" as="geometry"/>
+                    <mxGeometry x="1226.25" y="1160" width="115" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="45" value="AnimateHand&lt;br&gt;Controller" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B09500;fillColor=#e3c800;gradientDirection=north;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="1448.75" y="940" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="1378.75" y="1090" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="47" value="Adapter to open source Oculus hand&lt;br&gt;Model and Animations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="1431.25" y="1010" width="115" height="70" as="geometry"/>
+                    <mxGeometry x="1361.25" y="1160" width="115" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="50" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
-                    <mxGeometry x="150" y="1230" width="450" height="450" as="geometry"/>
+                    <mxGeometry x="150" y="1230" width="740" height="450" as="geometry"/>
                 </mxCell>
                 <mxCell id="51" value="&lt;h1&gt;Scripts For Managing Scenes&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" parent="1" vertex="1">
-                    <mxGeometry x="280" y="1260" width="240" height="60" as="geometry"/>
+                    <mxGeometry x="250" y="1255" width="250" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="55" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="52" target="53" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -182,8 +196,15 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="89" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="52" target="87" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="790" y="1420"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="52" value="MonoBehaviour" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
-                    <mxGeometry x="300" y="1340" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="480" y="1330" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="53" value="Generic&lt;br&gt;SingletonClass&amp;lt;T&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="200" y="1460" width="120" height="60" as="geometry"/>
@@ -193,56 +214,56 @@
                 </mxCell>
                 <mxCell id="59" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="42" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1503.75" y="880" as="sourcePoint"/>
-                        <mxPoint x="1633.7500000000002" y="940.0000000000002" as="targetPoint"/>
+                        <mxPoint x="1433.75" y="1030" as="sourcePoint"/>
+                        <mxPoint x="1563.7500000000002" y="1090.0000000000002" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1633.75" y="900"/>
+                            <mxPoint x="1563.75" y="1050"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="61" value="Update the camera position in each frame, rather than during only position change" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="1576.25" y="1010" width="115" height="70" as="geometry"/>
+                    <mxGeometry x="1506.25" y="1160" width="115" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="62" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;Dynamic&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&amp;nbsp;Move&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;Provider&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
-                    <mxGeometry x="1706.25" y="940" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="1636.25" y="1090" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="63" value="Update the camera position in each frame, rather than during only position change" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="1698.75" y="1010" width="115" height="70" as="geometry"/>
+                    <mxGeometry x="1628.75" y="1160" width="115" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="65" value="Custom Character&lt;br&gt;Controller Driver" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
-                    <mxGeometry x="1583.75" y="940" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="1513.75" y="1090" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="66" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/manual/images/class-hierarchy.svg;imageBackground=#FFFFFF;fillStyle=solid;" parent="1" vertex="1">
-                    <mxGeometry x="549.6800000000001" y="1204.5" width="630.64" height="171" as="geometry"/>
+                    <mxGeometry x="1100" y="14" width="630.64" height="171" as="geometry"/>
                 </mxCell>
-                <mxCell id="67" value="LoadScene" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
-                    <mxGeometry x="400" y="1460" width="120" height="60" as="geometry"/>
+                <mxCell id="67" value="LoadScene" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="1460" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="68" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="52" target="67">
+                <mxCell id="68" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="52" target="67" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="460" y="1420"/>
+                            <mxPoint x="540" y="1420"/>
                         </Array>
                         <mxPoint x="370" y="1410" as="sourcePoint"/>
                         <mxPoint x="270" y="1470" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="69" value="Class That Implements Scene Loading (Could be hooked into UI)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="380" y="1540" width="160" height="70" as="geometry"/>
+                <mxCell id="69" value="Class That Implements Scene Loading (Could be hooked into UI)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="1540" width="160" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="70" value="Apply Physics" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                <mxCell id="70" value="Apply Physics" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
                     <mxGeometry x="560" y="940" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="73" value="Controlls The Off and On Of Physics To the RigidBody Attached to a gameobject" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="73" value="Controlls The Off and On Of Physics To the RigidBody Attached to a gameobject" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="540.0000000000001" y="1020" width="160" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="74" value="CreateTrail" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                <mxCell id="74" value="CreateTrail" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
                     <mxGeometry x="745" y="940" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="75" value="Create A Trail With the prefab having a Trail Renderer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="75" value="Create A Trail With the prefab having a Trail Renderer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="725.0000000000001" y="1020" width="160" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="76" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="31" target="74">
+                <mxCell id="76" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="31" target="74" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="370" y="880" as="sourcePoint"/>
                         <mxPoint x="630" y="950" as="targetPoint"/>
@@ -250,6 +271,101 @@
                             <mxPoint x="805" y="900"/>
                         </Array>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="87" value="ShowFPS" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="1460" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="Implemented To a Canvas to show realtime FGI and Frame Rate" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="1550" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="90" target="91" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1620" y="300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="96" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="90" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1896.2857142857142" y="360" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1896" y="300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="90" value="Base Interactor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
+                    <mxGeometry x="1693.75" y="200" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="91" target="94" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="XR Socket Interactor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
+                    <mxGeometry x="1560" y="360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="XR Socket Purposely made for MyGrabInteractables Class" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1540" y="590" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="My XR Socket Interactor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="1560" y="520" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="97" target="99" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1789" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="102" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="97" target="100" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2000" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="97" value="Base Controller Interactor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
+                    <mxGeometry x="1836.25" y="360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="Abstract base class from which all interactors that are controller-driven derive" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1813.75" y="430" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="99" target="103" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="Direct&lt;br&gt;&amp;nbsp;Interactor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
+                    <mxGeometry x="1728.75" y="520" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="Ray&lt;br&gt;&amp;nbsp;Interactor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
+                    <mxGeometry x="1940" y="520" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="XRDirect&lt;br&gt;Climb&lt;br&gt;Interactor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="1728.75" y="660" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="Interactor That Could Handle Climing Actions On Objects Tagged &quot;Climbable“" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1708.75" y="730" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="106" target="111">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="TeleportationArea" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+                    <mxGeometry x="1070" y="370" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="108" target="112">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="TeleportationAnchor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+                    <mxGeometry x="1260" y="370" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="MyTeleportationArea" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+                    <mxGeometry x="1070" y="550" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="MyTeleportationAnchor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+                    <mxGeometry x="1260" y="550" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="Generates TeleportRequest For Manager to handle, with&amp;nbsp; Safe Delete of the interfering Collider of the Reticle Object" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1066.25" y="630" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="Generates TeleportRequest To a Specific Spot For Manager to handle, with&amp;nbsp; Safe Delete of the interfering Collider of the Reticle Object" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1255" y="630" width="160" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
