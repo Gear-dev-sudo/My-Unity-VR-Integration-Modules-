@@ -213,7 +213,7 @@
                 {
                     "name": "",
                     "id": "d7766c32-1642-49e2-bb8b-2d8066a78b87",
-                    "path": "<PXR_Controller>/deviceVelocity",
+                    "path": "<PXR_Controller>{LeftHand}/deviceVelocity",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

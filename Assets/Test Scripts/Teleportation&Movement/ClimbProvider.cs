@@ -35,7 +35,7 @@ public class ClimbProvider : MonoBehaviour
             _leftActive = true;
             _rightActive = false;
         }
-        else
+        else if (_controllerName == "RightHand Controller")
         {
             _leftActive = false;
             _rightActive = true;
