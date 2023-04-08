@@ -21,6 +21,7 @@ namespace my_unity_integration
        
 
         private IXRInteractor _interactor;
+        private Transform _interactorModel;
         private Quaternion _attachInitialRotation;
 
         Transform attachPoint;
@@ -45,6 +46,7 @@ namespace my_unity_integration
                 Transform newTransform = newGO.transform;
                 newTransform.parent = gameObject.transform;
                 newTransform.localPosition = Vector3.zero;
+                newTransform.rotation = transform.rotation;
                 this.attachTransform = newTransform;
                 attachPoint = newTransform;
             }
@@ -52,6 +54,7 @@ namespace my_unity_integration
             else if (this.attachTransform != null && !dualAttachCheckbox)
             {
                 attachPoint = this.attachTransform;
+                Debug.LogWarning("Initial AttachPoint" + attachPoint.position+attachPoint.localPosition);
             }
 
 
@@ -132,16 +135,24 @@ namespace my_unity_integration
             rb.angularVelocity = Vector3.zero;
             base.OnSelectEntered(args);
             _interactor = args.interactorObject;
-            
+            _interactorModel = _interactor.transform.Find("Model");
+
+
+
+
             if (!dynamicAttachCheckbox)
             {
+                Debug.LogWarning("attachPoint" + attachPoint.position+attachPoint.localPosition);
+               
                 args.interactableObject.transform.position = (args.interactorObject).transform.position;
-
-                args.interactableObject.transform.Translate(args.interactableObject.transform.position - attachPoint.position);
-
+                Debug.LogWarning("interactableObject position"+ args.interactableObject.transform.position+ args.interactableObject.transform.localPosition);
+               
+                args.interactableObject.transform.position = (args.interactableObject.transform.gameObject.transform.position - attachPoint.localPosition);
+                Debug.LogWarning("MOVING TO" + args.interactableObject.transform.position);
+                //Time.timeScale = 0;
             }
 
-            Attach();
+        Attach();
         }
 
         Vector3 InteractorLocalPosition;
@@ -192,9 +203,10 @@ namespace my_unity_integration
         {
             if ((_interactor is XRDirectInteractor))
             {
+                kinematicSetting = transform.gameObject.GetComponent<Rigidbody>().isKinematic;
                 // 将游戏对象附加到交互器上
-                transform.SetParent(_interactor.transform);
-
+                transform.SetParent(_interactor.transform, true);
+                transform.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 transform.localPosition += attachPositionOffset;
                 transform.localRotation = Quaternion.Euler(attachRotationOffset) * _attachInitialRotation;
 
@@ -203,6 +215,7 @@ namespace my_unity_integration
 
 
         bool throwOnDetach=true;
+        private bool kinematicSetting;
 
         /// <summary>
         /// 
@@ -215,6 +228,7 @@ namespace my_unity_integration
             {
                 // 将游戏对象从交互器上分离
                 transform.SetParent(null);
+                transform.gameObject.GetComponent<Rigidbody>().isKinematic =kinematicSetting;
                 attachTransform.localRotation = _attachInitialRotation;
 
 
@@ -254,7 +268,7 @@ namespace my_unity_integration
                 
                 interactable.forceDetachGravityCheckbox = EditorGUILayout.Toggle("Force Gravity On Detach", interactable.forceDetachGravityCheckbox);
                 interactable.dynamicAttachCheckbox = EditorGUILayout.Toggle("Dynamic Attach", interactable.dynamicAttachCheckbox);
-                interactable.throwOnDetach = EditorGUILayout.Toggle("Throw On Detach", interactable.throwOnDetach);
+               
                 if (interactable.dualAttachCheckbox)
                 {
                     EditorGUILayout.LabelField("Left/Right Hand Attach Points", EditorStyles.boldLabel);
