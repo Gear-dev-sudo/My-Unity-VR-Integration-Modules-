@@ -4,9 +4,12 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.XR.Interaction.Toolkit;
 
+
 namespace my_unity_integration
 {
+
     [RequireComponent(typeof(Collider))]
+    [RequireComponent(typeof(Rigidbody))]
     public class MyGrabDirectInteractable : XRBaseInteractable
     {
         //Attach TransForms
