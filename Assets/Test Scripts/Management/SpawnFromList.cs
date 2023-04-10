@@ -10,6 +10,9 @@ public class SpawnFromList : MonoBehaviour
     [Tooltip("List of objects that are spawned")]
     public List<GameObject> originalObjects = null;
 
+    [Tooltip("Corresponding Cost")]
+    public List<int> originalObjectsCost = null;
+
     [Tooltip("Transform for how the object will be spawned")]
     public Transform spawnPoint = null;
 
@@ -18,12 +21,15 @@ public class SpawnFromList : MonoBehaviour
 
     private GameObject currentObject = null;
     private int index = 0;
+    public BudgetController budgetController;
 
     public void SpawnAtDropdownIndex(Dropdown dropdown)
     {
         index = Mathf.Clamp(dropdown.value, 0, originalObjects.Count);
         Spawn();
     }
+    
+ 
 
     public void SpawnAndReplaceAtDropdownIndex(int value)
     {
@@ -71,6 +77,19 @@ public class SpawnFromList : MonoBehaviour
     {
         index = value;
         Spawn();
+
+    }
+
+    public TMPro.TMP_Dropdown tMP_Drop;
+    public void SpawnAtIndexWithCost()
+    {
+        Debug.LogWarning("Spawn pre index+inde"+ tMP_Drop.value);
+        index = tMP_Drop.value-1;
+        if (index >= 0)
+        {
+            budgetController.Buy(originalObjectsCost[index]);
+            Spawn();
+        }
     }
 
     private void OnValidate()

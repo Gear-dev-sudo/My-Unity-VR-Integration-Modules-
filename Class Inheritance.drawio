@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="oWx1CMlj1S1pF4CIYpkc" name="Page-1">
-        <mxGraphModel dx="900" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
+        <mxGraphModel dx="2444" dy="1037" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -46,7 +46,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="2" value="Base Interactable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
-                    <mxGeometry x="380" y="240" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="380" y="215" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="Simple Interactable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
                     <mxGeometry x="170" y="370" width="120" height="60" as="geometry"/>
@@ -80,7 +80,7 @@
                     <mxGeometry x="690" y="620" width="160" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="MyGrabDirectInteractable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
-                    <mxGeometry x="880" y="550" width="150" height="60" as="geometry"/>
+                    <mxGeometry x="880" y="540" width="150" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" value="Only Takes in Interactions from DirectInteractors&lt;br&gt;&lt;b&gt;with Dynamic Attach Point or Two Attach Points For both Left and Right Hand +Throwable&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="880" y="630" width="160" height="50" as="geometry"/>
@@ -410,7 +410,7 @@
                     <mxGeometry x="2170" y="80" width="600" height="340" as="geometry"/>
                 </mxCell>
                 <mxCell id="131" value="&lt;h1&gt;Scripts For Managing DCCs&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" parent="1" vertex="1">
-                    <mxGeometry x="2430" y="105" width="240" height="75" as="geometry"/>
+                    <mxGeometry x="2350" y="95" width="240" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="133" value="PlayVideo" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
                     <mxGeometry x="2240" y="235" width="100" height="60" as="geometry"/>
