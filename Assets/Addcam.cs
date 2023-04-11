@@ -4,28 +4,36 @@ using UnityEngine;
 
 public class Addcam : MonoBehaviour
 {
-
+    [SerializeField]
+    [Tooltip("Assign the MySecurityCamContoller object")]
+    private MySecurityCamContoller securityCamController;
 
     [SerializeField]
     [Tooltip("Assign the two Text(TMP) objects")]
-    TMPro.TextMeshProUGUI text1;
+    private TMPro.TextMeshProUGUI text1;
 
     [SerializeField]
     [Tooltip("Assign the two Text(TMP) objects")]
-    TMPro.TextMeshProUGUI text2;
-    // Start is called before the first frame update
-    void Awake()
+    private TMPro.TextMeshProUGUI text2;
+
+    private void Start()
     {
-        MySecurityCamContoller.Instance.addCam();
-        text1.SetText(" # Cam: " + MySecurityCamContoller.Instance.camCount);
-        text2.SetText(" # Security Cam: " + MySecurityCamContoller.Instance.camCount);
+        // Find the MySecurityCamController object in the scene
+        securityCamController = GameObject.FindObjectOfType<MySecurityCamContoller>();
 
-
+        // If the MySecurityCamController object is not found, log a warning
+        if (securityCamController == null)
+        {
+            Debug.LogWarning("MySecurityCamController object not found in the scene!");
+        }
+        else
+        {
+            // Add a camera to the MySecurityCamController object
+            securityCamController.addCam();
+        }  // Update the text objects with the camera count
+        text1.SetText(" # Cam: " + securityCamController.camCount);
+        text2.SetText(" # Security Cam: " + securityCamController.camCount);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

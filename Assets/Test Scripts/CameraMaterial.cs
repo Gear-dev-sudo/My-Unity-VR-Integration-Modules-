@@ -1,28 +1,33 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraMaterial : MonoBehaviour
 {
     [Tooltip("The gameobject to apply the material to.")]
     public GameObject targetObject;
-    
-    [Tooltip("The material to apply to the target object.")]
-    private Material outputMaterial = new Material(Shader.Find("Standard"));
+    // Material material;
+    RenderTexture renderTexture;
     
     private Camera cameraComponent;
-    
+    Material material;
     private void Start()
     {
         // Get the camera component attached to this gameobject
         cameraComponent = GetComponent<Camera>();
+        renderTexture = new RenderTexture(256,256,16);
+        renderTexture.Create();
+        material = targetObject.GetComponent<MeshRenderer>().material;
         
-        // Set the camera's target texture to a new RenderTexture
-        RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
+    }
+    MeshRenderer mR;
+    void Update()
+    {
+        cameraComponent.forceIntoRenderTexture = true;
         cameraComponent.targetTexture = renderTexture;
-        
-        // Set the output material's main texture to the camera's target texture
-        outputMaterial.mainTexture = renderTexture;
-        
-        // Apply the output material to the target object
-        targetObject.GetComponent<Renderer>().material = outputMaterial;
+        material.mainTexture = renderTexture;
+    }
+    void OnDestroy()
+    {
+        renderTexture.Release();
     }
 }
