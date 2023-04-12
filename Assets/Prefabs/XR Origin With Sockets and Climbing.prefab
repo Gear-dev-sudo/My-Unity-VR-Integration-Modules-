@@ -212,6 +212,8 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  disableDuration: 2
+  hoverMeshTransform: {fileID: 0}
 --- !u!65 &465820855091553708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3139,6 +3141,8 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  disableDuration: 2
+  hoverMeshTransform: {fileID: 0}
 --- !u!65 &465820856220416532
 BoxCollider:
   m_ObjectHideFlags: 0

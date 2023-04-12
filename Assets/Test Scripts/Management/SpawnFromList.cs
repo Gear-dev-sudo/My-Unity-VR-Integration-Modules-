@@ -12,6 +12,9 @@ public class SpawnFromList : MonoBehaviour
 
     [Tooltip("Corresponding Cost")]
     public List<int> originalObjectsCost = null;
+    
+    [Tooltip("Corresponding Score")]
+    public List<int> originalObjectsScore = null;
 
     [Tooltip("Transform for how the object will be spawned")]
     public Transform spawnPoint = null;
@@ -22,6 +25,7 @@ public class SpawnFromList : MonoBehaviour
     private GameObject currentObject = null;
     private int index = 0;
     public BudgetController budgetController;
+    public MyScoreSingleton myScoreSingleton;
 
     public void SpawnAtDropdownIndex(Dropdown dropdown)
     {
@@ -88,6 +92,7 @@ public class SpawnFromList : MonoBehaviour
         if (index >= 0)
         {
             budgetController.Buy(originalObjectsCost[index]);
+            myScoreSingleton.ComputeScore(originalObjectsScore[index]);
             Spawn();
         }
     }

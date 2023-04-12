@@ -109,6 +109,10 @@ namespace my_unity_integration
                 }
 
             }
+            else if (!dualAttachCheckbox && !dynamicAttachCheckbox)
+            {
+               
+            }
 
 
         }
@@ -211,7 +215,8 @@ namespace my_unity_integration
                 transform.SetParent(_interactor.transform, true);
                 transform.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 transform.localPosition += attachPositionOffset;
-                transform.localRotation = Quaternion.Euler(attachRotationOffset) * _attachInitialRotation;
+                Debug.LogWarning("Debug Rotation: _attachInitialRotation" + _attachInitialRotation.eulerAngles);
+                transform.localRotation = Quaternion.Euler(attachRotationOffset) * Quaternion.Inverse( _attachInitialRotation);
 
             }
         }
