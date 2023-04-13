@@ -1,0 +1,641 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Void VirtualGrasp.Controllers.VG_EC_GenericHand::.ctor(System.Int32,VirtualGrasp.VG_HandSide)
+extern void VG_EC_GenericHand__ctor_mE9139DED7D9698E17E9F1F3DD1EE645174CB12DC (void);
+// 0x00000002 System.Void VirtualGrasp.Controllers.VG_EC_GenericHand::Initialize()
+extern void VG_EC_GenericHand_Initialize_m31348DA83711F411A6D962C605415A6FEAB843BC (void);
+// 0x00000003 System.Boolean VirtualGrasp.Controllers.VG_EC_GenericHand::Compute()
+extern void VG_EC_GenericHand_Compute_m7C376987A04BC24BC506F67EDAFB689CAFFE47A8 (void);
+// 0x00000004 System.Single VirtualGrasp.Controllers.VG_EC_GenericHand::GetGrabStrength()
+extern void VG_EC_GenericHand_GetGrabStrength_m6CAE2B2D6CC83D8EE60F2FBE96EB521716C16F56 (void);
+// 0x00000005 UnityEngine.Color VirtualGrasp.Controllers.VG_EC_GenericHand::GetConfidence()
+extern void VG_EC_GenericHand_GetConfidence_mD14A90D7731128D213234CD44FE9594ED475B525 (void);
+// 0x00000006 System.Void VirtualGrasp.Controllers.VG_EC_GenericHand::HapticPulse(VirtualGrasp.VG_HandStatus,System.Single,System.Single,System.Int32)
+extern void VG_EC_GenericHand_HapticPulse_m69AE8962F29EBD528CDACACDB827707BEF7056E2 (void);
+// 0x00000007 System.Void VirtualGrasp.Controllers.VG_EC_GenericHand/HandMapping::Initialize(System.Int32,VirtualGrasp.VG_HandSide)
+extern void HandMapping_Initialize_m8ACB97B8FDF837F17D189F1F3AAC098E29A73478 (void);
+// 0x00000008 System.Void VirtualGrasp.Controllers.VG_EC_GenericHand/HandMapping::.ctor()
+extern void HandMapping__ctor_m087175A6B008D2B058FBD7CD59B9FE93F11D7559 (void);
+// 0x00000009 System.Void VirtualGrasp.Controllers.VG_EC_LeapHand::.ctor(System.Int32,VirtualGrasp.VG_HandSide)
+extern void VG_EC_LeapHand__ctor_mB39993B4BEFE830C33AD580D5A1400A883DD70C4 (void);
+// 0x0000000A System.Void VirtualGrasp.Controllers.VG_EC_LeapHand::Initialize()
+extern void VG_EC_LeapHand_Initialize_m6774B16FABC8018DDAB271EF22C48C1E09E8E2F0 (void);
+// 0x0000000B System.Boolean VirtualGrasp.Controllers.VG_EC_LeapHand::Compute()
+extern void VG_EC_LeapHand_Compute_mA75579B5D743E85C71321AB977051E7860C5A81D (void);
+// 0x0000000C System.Single VirtualGrasp.Controllers.VG_EC_LeapHand::GetGrabStrength()
+extern void VG_EC_LeapHand_GetGrabStrength_mAA0826F1C90B3607A2D918D18FCE623FEA15E2B0 (void);
+// 0x0000000D UnityEngine.Color VirtualGrasp.Controllers.VG_EC_LeapHand::GetConfidence()
+extern void VG_EC_LeapHand_GetConfidence_m17077D79063AEE5D5BC0458F01CDEC41812CBAEA (void);
+// 0x0000000E System.Void VirtualGrasp.Controllers.VG_EC_LeapHand::HapticPulse(VirtualGrasp.VG_HandStatus,System.Single,System.Single,System.Int32)
+extern void VG_EC_LeapHand_HapticPulse_mC4B54327B57A7A280F108058BB8FAF7B72F756E7 (void);
+// 0x0000000F System.Void VirtualGrasp.Controllers.VG_EC_LeapHand/HandMapping::Initialize(System.Int32,VirtualGrasp.VG_HandSide)
+extern void HandMapping_Initialize_mB59AC3F0CCB61C28400F59D00A29DA033B7DB8DC (void);
+// 0x00000010 System.Void VirtualGrasp.Controllers.VG_EC_LeapHand/HandMapping::.ctor()
+extern void HandMapping__ctor_mA77B88E79D32A643ECF75A1472FE5085E83F64F5 (void);
+// 0x00000011 System.Void VirtualGrasp.Controllers.VG_EC_MouseHand::.ctor(System.Int32,VirtualGrasp.VG_HandSide)
+extern void VG_EC_MouseHand__ctor_m6E1C1C9CC5F394B0729CD98C0386218B0AFFB390 (void);
+// 0x00000012 System.Void VirtualGrasp.Controllers.VG_EC_MouseHand::Initialize()
+extern void VG_EC_MouseHand_Initialize_m9DC65DA7D67F6BC0C4E3856A9C3BC5B3CD6FA20A (void);
+// 0x00000013 System.Boolean VirtualGrasp.Controllers.VG_EC_MouseHand::Compute()
+extern void VG_EC_MouseHand_Compute_mE210CF5A550A5EBAE0EA63AF01F44ACE522480F6 (void);
+// 0x00000014 System.Single VirtualGrasp.Controllers.VG_EC_MouseHand::GetGrabStrength()
+extern void VG_EC_MouseHand_GetGrabStrength_m7614FD0791D5C8AA725A5991928E61BB9DB5CF2F (void);
+// 0x00000015 UnityEngine.Color VirtualGrasp.Controllers.VG_EC_MouseHand::GetConfidence()
+extern void VG_EC_MouseHand_GetConfidence_m1F6AE243F439E5941AD03D5DE7C8CEEA80312144 (void);
+// 0x00000016 System.Void VirtualGrasp.Controllers.VG_EC_MouseHand::HapticPulse(VirtualGrasp.VG_HandStatus,System.Single,System.Single,System.Int32)
+extern void VG_EC_MouseHand_HapticPulse_mE1FCF2C839A003D4242E8E60B75337F74DB36F60 (void);
+// 0x00000017 System.Void VirtualGrasp.Controllers.VG_EC_MouseHand/HandMapping::Initialize(System.Int32,VirtualGrasp.VG_HandSide)
+extern void HandMapping_Initialize_m61E5E35B2D7B4DD0CCC4F5D7754B8278E31528CD (void);
+// 0x00000018 System.Void VirtualGrasp.Controllers.VG_EC_MouseHand/HandMapping::.ctor()
+extern void HandMapping__ctor_m2725F2BA7301ACAE3492C1C9D64B461A034EDD1E (void);
+// 0x00000019 System.Void VirtualGrasp.Controllers.VG_EC_OculusHand::.ctor(System.Int32,VirtualGrasp.VG_HandSide,System.Boolean)
+extern void VG_EC_OculusHand__ctor_mD9AC913C4C3730F4E0A0907A4744C8A4EC67812A (void);
+// 0x0000001A System.Void VirtualGrasp.Controllers.VG_EC_OculusHand::Initialize()
+extern void VG_EC_OculusHand_Initialize_m265BBBC91B71C7561AF2272BDA385FC8586CBA76 (void);
+// 0x0000001B System.Single VirtualGrasp.Controllers.VG_EC_OculusHand::GetGrabStrength()
+extern void VG_EC_OculusHand_GetGrabStrength_mF161A3148B70E7C38141D0265980C27C725EBF5F (void);
+// 0x0000001C System.Boolean VirtualGrasp.Controllers.VG_EC_OculusHand::IsTracking()
+extern void VG_EC_OculusHand_IsTracking_m948276EB4B94C0AD28EF103EF8F71DBF173BA15C (void);
+// 0x0000001D System.Boolean VirtualGrasp.Controllers.VG_EC_OculusHand::Compute()
+extern void VG_EC_OculusHand_Compute_m121D3C87BB862A458D59DC7CDD90373ABD10121D (void);
+// 0x0000001E UnityEngine.Color VirtualGrasp.Controllers.VG_EC_OculusHand::GetConfidence()
+extern void VG_EC_OculusHand_GetConfidence_m402B4A2E0997C29C1F674E7F98F3755011151E04 (void);
+// 0x0000001F System.Void VirtualGrasp.Controllers.VG_EC_OculusHand::HapticPulse(VirtualGrasp.VG_HandStatus,System.Single,System.Single,System.Int32)
+extern void VG_EC_OculusHand_HapticPulse_mA0621DB7ED0F3F480E251C1771ECA4F9CA1A7C19 (void);
+// 0x00000020 System.Void VirtualGrasp.Controllers.VG_EC_OculusHand/HandMapping::Initialize(System.Int32,VirtualGrasp.VG_HandSide)
+extern void HandMapping_Initialize_mE4C62BA63F8D7A70FB9E37ABAC81832B5F6B9AAC (void);
+// 0x00000021 System.Void VirtualGrasp.Controllers.VG_EC_OculusHand/HandMapping::.ctor()
+extern void HandMapping__ctor_m198BF04F9ED742D1883843FD702DDB0706B45CAC (void);
+// 0x00000022 System.Void VirtualGrasp.Controllers.VG_EC_SteamHand::.ctor(System.Int32,VirtualGrasp.VG_HandSide)
+extern void VG_EC_SteamHand__ctor_m7657989AEDC50DE3B61552B7FBFEF1D1FF5CED17 (void);
+// 0x00000023 System.Void VirtualGrasp.Controllers.VG_EC_SteamHand::Initialize()
+extern void VG_EC_SteamHand_Initialize_mCF5951DFBBC40B7287087A23A975618D8FFD2655 (void);
+// 0x00000024 System.Single VirtualGrasp.Controllers.VG_EC_SteamHand::GetGrabStrength()
+extern void VG_EC_SteamHand_GetGrabStrength_m45B9DA8E01DC66FD6DE5AC4DF69DBE069FC056C3 (void);
+// 0x00000025 System.Boolean VirtualGrasp.Controllers.VG_EC_SteamHand::Compute()
+extern void VG_EC_SteamHand_Compute_m31AA8C8FBCF8E5DE8906C807E31F0CB4A707DD92 (void);
+// 0x00000026 System.Void VirtualGrasp.Controllers.VG_EC_SteamHand::HapticPulse(VirtualGrasp.VG_HandStatus,System.Single,System.Single,System.Int32)
+extern void VG_EC_SteamHand_HapticPulse_m3A81FEA7BCA1D479CC950491CEE6452EFDD6A014 (void);
+// 0x00000027 UnityEngine.Color VirtualGrasp.Controllers.VG_EC_SteamHand::GetConfidence()
+extern void VG_EC_SteamHand_GetConfidence_m733DD726D7651FC063D3D72716E6CF2E45CD0588 (void);
+// 0x00000028 System.Void VirtualGrasp.Controllers.VG_EC_SteamHand/SteamHandMapping::Initialize(System.Int32,VirtualGrasp.VG_HandSide)
+extern void SteamHandMapping_Initialize_m6F72B66A50D4AE864E25ED6A1EE0B4B42C50F367 (void);
+// 0x00000029 System.Void VirtualGrasp.Controllers.VG_EC_SteamHand/SteamHandMapping::.ctor()
+extern void SteamHandMapping__ctor_m5FC4CB64E2AEFE2FBF8E094499D90D4C46730312 (void);
+// 0x0000002A System.Void VirtualGrasp.Controllers.VG_EC_UnityInteractionHand::.ctor(System.Int32,VirtualGrasp.VG_HandSide)
+extern void VG_EC_UnityInteractionHand__ctor_mC43E09F31F5C9774366C818D97BDEF66863C1006 (void);
+// 0x0000002B System.Void VirtualGrasp.Controllers.VG_EC_UnityInteractionHand::Initialize()
+extern void VG_EC_UnityInteractionHand_Initialize_mA2A12092753FC9FDB1A4A7C2A140F4D21B049B8D (void);
+// 0x0000002C System.Boolean VirtualGrasp.Controllers.VG_EC_UnityInteractionHand::Compute()
+extern void VG_EC_UnityInteractionHand_Compute_m70F0AAC50FC0725DC4373239F825DA2F7E462AE8 (void);
+// 0x0000002D System.Single VirtualGrasp.Controllers.VG_EC_UnityInteractionHand::GetGrabStrength()
+extern void VG_EC_UnityInteractionHand_GetGrabStrength_mB4821B5AB79756978CC51D52B093BC756A47D5DE (void);
+// 0x0000002E UnityEngine.Color VirtualGrasp.Controllers.VG_EC_UnityInteractionHand::GetConfidence()
+extern void VG_EC_UnityInteractionHand_GetConfidence_m33F9783D4B51192B398AE2104893F320E3742FC3 (void);
+// 0x0000002F System.Void VirtualGrasp.Controllers.VG_EC_UnityInteractionHand::HapticPulse(VirtualGrasp.VG_HandStatus,System.Single,System.Single,System.Int32)
+extern void VG_EC_UnityInteractionHand_HapticPulse_mD7620F9F6EBF870F313EB38D603CA010456FE331 (void);
+// 0x00000030 System.Void VirtualGrasp.Controllers.VG_EC_UnityInteractionHand/HandMapping::Initialize(System.Int32,VirtualGrasp.VG_HandSide)
+extern void HandMapping_Initialize_m90BC406DD05C8E51BDD62AA6B055D774B9D40066 (void);
+// 0x00000031 System.Void VirtualGrasp.Controllers.VG_EC_UnityInteractionHand/HandMapping::.ctor()
+extern void HandMapping__ctor_mB331040E94C3501953F6E4F96140B5D410338577 (void);
+// 0x00000032 System.Void VirtualGrasp.Controllers.VG_EC_UnityXRHand::.ctor(System.Int32,VirtualGrasp.VG_HandSide)
+extern void VG_EC_UnityXRHand__ctor_mCBDC43871AFF2423E5423C94FF0B9B5E037AFD78 (void);
+// 0x00000033 System.Void VirtualGrasp.Controllers.VG_EC_UnityXRHand::Initialize()
+extern void VG_EC_UnityXRHand_Initialize_mE9EA4116C0239A04259A0064F050EFCFC3577CB5 (void);
+// 0x00000034 System.Boolean VirtualGrasp.Controllers.VG_EC_UnityXRHand::Compute()
+extern void VG_EC_UnityXRHand_Compute_m2D6C8685D64499C6BBC0A5BE1D33945E302F6EF3 (void);
+// 0x00000035 System.Single VirtualGrasp.Controllers.VG_EC_UnityXRHand::GetGrabStrength()
+extern void VG_EC_UnityXRHand_GetGrabStrength_m30C8D48959CA6D772E82908571FB135B0D21D5D6 (void);
+// 0x00000036 UnityEngine.Color VirtualGrasp.Controllers.VG_EC_UnityXRHand::GetConfidence()
+extern void VG_EC_UnityXRHand_GetConfidence_mEFB8450E59C26A4B3A4680D25521C1F0D3466259 (void);
+// 0x00000037 System.Void VirtualGrasp.Controllers.VG_EC_UnityXRHand::HapticPulse(VirtualGrasp.VG_HandStatus,System.Single,System.Single,System.Int32)
+extern void VG_EC_UnityXRHand_HapticPulse_m10F2F6F627EF5288A7BC90D390D7AD8349425CF6 (void);
+// 0x00000038 System.Void VirtualGrasp.Controllers.VG_EC_UnityXRHand/HandMapping::Initialize(System.Int32,VirtualGrasp.VG_HandSide)
+extern void HandMapping_Initialize_m2226BA3B35A64762EED43BDD16D19918ABEB17F1 (void);
+// 0x00000039 System.Void VirtualGrasp.Controllers.VG_EC_UnityXRHand/HandMapping::.ctor()
+extern void HandMapping__ctor_m53D4859EC157E7A64C8B5A0B05996FE910E874B7 (void);
+// 0x0000003A System.Void VirtualGrasp.Scripts.MyVirtualGrasp::Awake()
+extern void MyVirtualGrasp_Awake_mD60648E03BBEEECAA665FD93703B46618B415919 (void);
+// 0x0000003B System.Void VirtualGrasp.Scripts.MyVirtualGrasp::Update()
+extern void MyVirtualGrasp_Update_mABD5B3C460C2331046FF20CEA4ABDC41C507D949 (void);
+// 0x0000003C System.Void VirtualGrasp.Scripts.MyVirtualGrasp::FixedUpdate()
+extern void MyVirtualGrasp_FixedUpdate_m42FA24B7EF1E7BCCCAD7848C24BCDD4F5E29C8CA (void);
+// 0x0000003D System.Void VirtualGrasp.Scripts.MyVirtualGrasp::OnApplicationQuit()
+extern void MyVirtualGrasp_OnApplicationQuit_mBF7FA69994F296500FBADBEA9A360F03A3FE3F91 (void);
+// 0x0000003E System.Void VirtualGrasp.Scripts.MyVirtualGrasp::OnApplicationPause()
+extern void MyVirtualGrasp_OnApplicationPause_mB0E5C1507FEC7FD1C344FFF9187985E477CE7BAC (void);
+// 0x0000003F System.Void VirtualGrasp.Scripts.MyVirtualGrasp::SaveState()
+extern void MyVirtualGrasp_SaveState_m6463EE19B00C8F19F22BF2B53E3C43A2268BAD55 (void);
+// 0x00000040 System.Void VirtualGrasp.Scripts.MyVirtualGrasp::.ctor()
+extern void MyVirtualGrasp__ctor_m0138F1FE6DAB275EDE77A868982A40AB38B24696 (void);
+// 0x00000041 System.Void VirtualGrasp.Scripts.VG_AnimationDriver::Awake()
+extern void VG_AnimationDriver_Awake_m98A208EDDF28FF5CCC3D2E84FA6B4A944D1303FE (void);
+// 0x00000042 System.Void VirtualGrasp.Scripts.VG_AnimationDriver::OnEnable()
+extern void VG_AnimationDriver_OnEnable_mF3CC04A2BD72EDDEED7CE909FCAB49AB4789D960 (void);
+// 0x00000043 System.Void VirtualGrasp.Scripts.VG_AnimationDriver::OnDisable()
+extern void VG_AnimationDriver_OnDisable_m948353E1D3743F1E4DC4DFB10BBABE11A788CEB5 (void);
+// 0x00000044 System.Void VirtualGrasp.Scripts.VG_AnimationDriver::Start()
+extern void VG_AnimationDriver_Start_mB44E21DB585E15EBB15D553FCCE3BDD9A519E5A9 (void);
+// 0x00000045 System.Void VirtualGrasp.Scripts.VG_AnimationDriver::Update()
+extern void VG_AnimationDriver_Update_m6A8CEDE4245D4555C6BFC12FB405E96566390788 (void);
+// 0x00000046 System.Void VirtualGrasp.Scripts.VG_AnimationDriver::OnObjectInteractionChanged(VirtualGrasp.VG_HandStatus)
+extern void VG_AnimationDriver_OnObjectInteractionChanged_mED3995D90FC27769EB92F2F86DF057E18AA65C50 (void);
+// 0x00000047 System.Void VirtualGrasp.Scripts.VG_AnimationDriver::.ctor()
+extern void VG_AnimationDriver__ctor_m96CA5F9F2931AB32AB1B5AE7DC5DA4812D2FD3B6 (void);
+// 0x00000048 System.Void VirtualGrasp.Scripts.VG_Assemble::Start()
+extern void VG_Assemble_Start_mDE205A9E1FE4C1D366248E3C1ACF670438E408B1 (void);
+// 0x00000049 System.Void VirtualGrasp.Scripts.VG_Assemble::LateUpdate()
+extern void VG_Assemble_LateUpdate_mC68C4417D42F31788384B9F357C28FD410179E62 (void);
+// 0x0000004A System.Void VirtualGrasp.Scripts.VG_Assemble::assembleByJointChange()
+extern void VG_Assemble_assembleByJointChange_mD3421C41946F754085EB42063C8D44E58D3C9092 (void);
+// 0x0000004B System.Void VirtualGrasp.Scripts.VG_Assemble::disassembleByJointChange()
+extern void VG_Assemble_disassembleByJointChange_m2B64C8B8872483F2A9BEDC75A90F5B04DBE5982C (void);
+// 0x0000004C System.Boolean VirtualGrasp.Scripts.VG_Assemble::isZeroState(VirtualGrasp.VG_JointType)
+extern void VG_Assemble_isZeroState_mAB679070EF002839FCA03BE38F72EAA28A95B6F8 (void);
+// 0x0000004D System.Void VirtualGrasp.Scripts.VG_Assemble::getSensorControlledAnchorPose(VirtualGrasp.VG_HandStatus,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+extern void VG_Assemble_getSensorControlledAnchorPose_mE31FB0243D03098867AB39337863CA54A1E86EAA (void);
+// 0x0000004E System.Boolean VirtualGrasp.Scripts.VG_Assemble::findTarget(UnityEngine.Quaternion&)
+extern void VG_Assemble_findTarget_m0E8CB3AB00703E7357E7E8535A1D00E121A2F278 (void);
+// 0x0000004F System.Boolean VirtualGrasp.Scripts.VG_Assemble::closeToTargetPose(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion&)
+extern void VG_Assemble_closeToTargetPose_m595B5B323560C36111EB5C35FB2E07236C81CE5F (void);
+// 0x00000050 System.Void VirtualGrasp.Scripts.VG_Assemble::.ctor()
+extern void VG_Assemble__ctor_m1E483D27E68AC5B640A2A4B46587BA805FD90A88 (void);
+// 0x00000051 System.Void VirtualGrasp.Scripts.VG_ExternalControllerManager::Initialize(VirtualGrasp.VG_MainScript)
+extern void VG_ExternalControllerManager_Initialize_mB70C1B14605CDF27D7A7D3551A68E067815AEDF2 (void);
+// 0x00000052 System.Void VirtualGrasp.Scripts.VG_ExternalControllerManager::RegisterExternalController(System.Int32,VirtualGrasp.VG_ControllerProfile)
+extern void VG_ExternalControllerManager_RegisterExternalController_m1C32E101D1B3A1BC0D2CC6C6BEDE512C69505E59 (void);
+// 0x00000053 System.Void VirtualGrasp.Scripts.VG_ExternalControllerManager::.ctor()
+extern void VG_ExternalControllerManager__ctor_mA4B6C55A1450D12590C75944967F3737EDBA1E61 (void);
+// 0x00000054 System.Void VirtualGrasp.Scripts.VG_FingerAnimator::DriveAnimation(System.Single)
+extern void VG_FingerAnimator_DriveAnimation_m4E07B1CBF7F4807D7D181366DDA8EE92FD5E2315 (void);
+// 0x00000055 System.Void VirtualGrasp.Scripts.VG_FingerAnimator::StopAnimationDrive()
+extern void VG_FingerAnimator_StopAnimationDrive_m4B3B7960C3F1C504AD07A3CE8B01CD8BC0880746 (void);
+// 0x00000056 VirtualGrasp.VG_HandSide VirtualGrasp.Scripts.VG_FingerAnimator::GetHandSide()
+extern void VG_FingerAnimator_GetHandSide_mAC7A29B121813DCC6074F15C7E07D091F96DC6E6 (void);
+// 0x00000057 System.Void VirtualGrasp.Scripts.VG_FingerAnimator::Start()
+extern void VG_FingerAnimator_Start_mB53AB573CACAC27D17DEF726C2E219D512231D8D (void);
+// 0x00000058 System.Void VirtualGrasp.Scripts.VG_FingerAnimator::OnObjectInteractionChanged(VirtualGrasp.VG_HandStatus)
+extern void VG_FingerAnimator_OnObjectInteractionChanged_m19F9E34835A6595D62722BD9EF4A6A345846993E (void);
+// 0x00000059 System.Void VirtualGrasp.Scripts.VG_FingerAnimator::OnEnable()
+extern void VG_FingerAnimator_OnEnable_m885EE033AB664B959B239C39B18FF21B6FA80332 (void);
+// 0x0000005A System.Void VirtualGrasp.Scripts.VG_FingerAnimator::OnDisable()
+extern void VG_FingerAnimator_OnDisable_m3E483AD49BA951115CF8EDE55EC252224663BECE (void);
+// 0x0000005B System.Void VirtualGrasp.Scripts.VG_FingerAnimator::Animate()
+extern void VG_FingerAnimator_Animate_mA17715DB1BF5CB12CD48F09C98C7F4EABDD97E15 (void);
+// 0x0000005C System.Void VirtualGrasp.Scripts.VG_FingerAnimator::AnimateFingerBone(System.Int32,System.Int32,System.Int32,VirtualGrasp.Scripts.VG_FingerAnimator/VG_FingerAnimationData)
+extern void VG_FingerAnimator_AnimateFingerBone_mAB7C122DEEE7083ECC72133AE90401C2C3558FF2 (void);
+// 0x0000005D System.Collections.Generic.List`1<System.Int32> VirtualGrasp.Scripts.VG_FingerAnimator::GetAvatars()
+extern void VG_FingerAnimator_GetAvatars_mEF92FA15B2B5E9912E86EF8926F513EEF8453AA9 (void);
+// 0x0000005E System.Void VirtualGrasp.Scripts.VG_FingerAnimator::.ctor()
+extern void VG_FingerAnimator__ctor_mCF7A0DC41B8511EDE442FC443831AC84DE4D7B33 (void);
+// 0x0000005F VirtualGrasp.Scripts.VG_FingerAnimator/VG_FingerAnimationData/Bone VirtualGrasp.Scripts.VG_FingerAnimator/VG_FingerAnimationData::BoneEnumFromIndex(System.Int32)
+extern void VG_FingerAnimationData_BoneEnumFromIndex_m4F87117806C7229838FEE0D506BE9300E1CD1C77 (void);
+// 0x00000060 VirtualGrasp.Scripts.VG_FingerAnimator/VG_FingerAnimationData/Finger VirtualGrasp.Scripts.VG_FingerAnimator/VG_FingerAnimationData::FingerEnumFromIndex(System.Int32)
+extern void VG_FingerAnimationData_FingerEnumFromIndex_mFED97549E955BD5EC2466D915E9DEFBE4E5C75B5 (void);
+// 0x00000061 System.Void VirtualGrasp.Scripts.VG_FingerAnimator/VG_FingerAnimationData::.ctor()
+extern void VG_FingerAnimationData__ctor_m1FDFF8B13D9DF575C26A882AC14424104AE35D8D (void);
+// 0x00000062 System.Void VirtualGrasp.Scripts.VG_FingerAnimator/AnimationEvents::.ctor()
+extern void AnimationEvents__ctor_mEB1F268A1862424CBE9B14A1DDA0C1F5EE1C8804 (void);
+// 0x00000063 System.Void VirtualGrasp.Scripts.VG_GraspEditor::Start()
+extern void VG_GraspEditor_Start_mBC84E02EF4F6ED2FFA5591DECFDEF818A9E680DE (void);
+// 0x00000064 System.Boolean VirtualGrasp.Scripts.VG_GraspEditor::IsValidObject(VirtualGrasp.VG_HandStatus)
+extern void VG_GraspEditor_IsValidObject_m9A30A0242BAFC7BA6CC19178F412B8F008CCD905 (void);
+// 0x00000065 System.Void VirtualGrasp.Scripts.VG_GraspEditor::AddGrasp(VirtualGrasp.VG_HandStatus)
+extern void VG_GraspEditor_AddGrasp_m316BE688059B7BCAFCCAE878B5218AA9B428A85B (void);
+// 0x00000066 System.Boolean VirtualGrasp.Scripts.VG_GraspEditor::ValidateAddGrasp(VirtualGrasp.VG_HandStatus,System.String&)
+extern void VG_GraspEditor_ValidateAddGrasp_mEA02D6E7540EBE94AFD908A11D6CD521666EED85 (void);
+// 0x00000067 System.Void VirtualGrasp.Scripts.VG_GraspEditor::ToggleInteraction(VirtualGrasp.VG_HandStatus)
+extern void VG_GraspEditor_ToggleInteraction_m177A2806062E8DFBED33695B3817843839B8280E (void);
+// 0x00000068 System.Void VirtualGrasp.Scripts.VG_GraspEditor::StepGrasp(VirtualGrasp.VG_HandStatus)
+extern void VG_GraspEditor_StepGrasp_m440043DCFFF6FB5548BA7187ECE5DF8DD66E0C64 (void);
+// 0x00000069 System.Boolean VirtualGrasp.Scripts.VG_GraspEditor::ValidateToggleInteraction(VirtualGrasp.VG_HandStatus,System.String&)
+extern void VG_GraspEditor_ValidateToggleInteraction_m690DB76EF7D92AF11541A932D489CC6FEDFB5870 (void);
+// 0x0000006A System.Boolean VirtualGrasp.Scripts.VG_GraspEditor::ValidateStepGrasp(VirtualGrasp.VG_HandStatus,System.String&)
+extern void VG_GraspEditor_ValidateStepGrasp_m2E95769F456BC93A6015C87D28BFFADB6455EA0F (void);
+// 0x0000006B System.Boolean VirtualGrasp.Scripts.VG_GraspEditor::ValidateDeleteGrasp(VirtualGrasp.VG_HandStatus,System.String&)
+extern void VG_GraspEditor_ValidateDeleteGrasp_m71BDE2BCDC099C696AB5980D08C88412E42B7BE5 (void);
+// 0x0000006C System.Boolean VirtualGrasp.Scripts.VG_GraspEditor::ValidateDeleteAllGrasp(VirtualGrasp.VG_HandStatus,System.String&)
+extern void VG_GraspEditor_ValidateDeleteAllGrasp_m7D718C660EF59F933092E9F3B200C282098CDD3C (void);
+// 0x0000006D System.Void VirtualGrasp.Scripts.VG_GraspEditor::DeleteGrasp(VirtualGrasp.VG_HandStatus)
+extern void VG_GraspEditor_DeleteGrasp_m35EF8E68AB9395A4C979AAABD95309181550B00E (void);
+// 0x0000006E System.Void VirtualGrasp.Scripts.VG_GraspEditor::DeleteAllGrasp(VirtualGrasp.VG_HandStatus)
+extern void VG_GraspEditor_DeleteAllGrasp_m6C5210B560D01A8BFCBD8822983321F6997CBF03 (void);
+// 0x0000006F System.Void VirtualGrasp.Scripts.VG_GraspEditor::Update()
+extern void VG_GraspEditor_Update_m9930B16C7AD0B9C3A77D37C5F4CD1D75E992BA8D (void);
+// 0x00000070 System.Void VirtualGrasp.Scripts.VG_GraspEditor::.ctor()
+extern void VG_GraspEditor__ctor_m2A589F72FB51B9049E2B1419B429DA0209CC60D8 (void);
+// 0x00000071 System.Void VirtualGrasp.Scripts.VG_GraspEditor/EditFunction::.ctor(System.Object,System.IntPtr)
+extern void EditFunction__ctor_m6AAA012C3C1D704159474D58CE811CBFBF2F78C5 (void);
+// 0x00000072 System.Void VirtualGrasp.Scripts.VG_GraspEditor/EditFunction::Invoke(VirtualGrasp.VG_HandStatus)
+extern void EditFunction_Invoke_m31E8121DFDD11A3B9A9C848EEAFEF7F2B5E14E44 (void);
+// 0x00000073 System.IAsyncResult VirtualGrasp.Scripts.VG_GraspEditor/EditFunction::BeginInvoke(VirtualGrasp.VG_HandStatus,System.AsyncCallback,System.Object)
+extern void EditFunction_BeginInvoke_m8FD419E4ADC7EE3CDCBCD3ABB410697C51F84C54 (void);
+// 0x00000074 System.Void VirtualGrasp.Scripts.VG_GraspEditor/EditFunction::EndInvoke(System.IAsyncResult)
+extern void EditFunction_EndInvoke_m86BDD0085D93B5DF88FCB9B935688629FEC9B8F3 (void);
+// 0x00000075 System.Void VirtualGrasp.Scripts.VG_GraspEditor/ValidateFunction::.ctor(System.Object,System.IntPtr)
+extern void ValidateFunction__ctor_m77C54573E8ADDF2EC438C075F92887785CFCB23C (void);
+// 0x00000076 System.Boolean VirtualGrasp.Scripts.VG_GraspEditor/ValidateFunction::Invoke(VirtualGrasp.VG_HandStatus,System.String&)
+extern void ValidateFunction_Invoke_m345D6F2632D0F455EF3F68618A7E1F3524EEE037 (void);
+// 0x00000077 System.IAsyncResult VirtualGrasp.Scripts.VG_GraspEditor/ValidateFunction::BeginInvoke(VirtualGrasp.VG_HandStatus,System.String&,System.AsyncCallback,System.Object)
+extern void ValidateFunction_BeginInvoke_m6F6DCFBC62E971FF726B3DDE867B30E5951EA896 (void);
+// 0x00000078 System.Boolean VirtualGrasp.Scripts.VG_GraspEditor/ValidateFunction::EndInvoke(System.String&,System.IAsyncResult)
+extern void ValidateFunction_EndInvoke_m6B7A8EB05B397F335393DE9D231E16B6BF1E7BDE (void);
+// 0x00000079 System.Void VirtualGrasp.Scripts.VG_GraspEditor/ButtonContainer::.ctor(UnityEngine.Transform,VirtualGrasp.Scripts.VG_GraspEditor/ValidateFunction,VirtualGrasp.Scripts.VG_GraspEditor/EditFunction)
+extern void ButtonContainer__ctor_m98B95B427038D616D9FBFDF1DC99A87FA9884E8F (void);
+// 0x0000007A System.Boolean VirtualGrasp.Scripts.VG_GraspEditor/ButtonContainer::Validate(VirtualGrasp.VG_HandStatus)
+extern void ButtonContainer_Validate_m75C021A89F69C40F80844905F753D0245C60F4DF (void);
+// 0x0000007B System.Boolean VirtualGrasp.Scripts.VG_GraspEditor/ButtonContainer::Trigger(VirtualGrasp.VG_HandStatus,System.Boolean)
+extern void ButtonContainer_Trigger_m883F1FC3CC2F7D3C89949A550D0A4C4B0FF651BE (void);
+// 0x0000007C System.Void VirtualGrasp.Scripts.VG_GraspEditor/ButtonContainer::.cctor()
+extern void ButtonContainer__cctor_m4B9FE5B5430804D3D9744F177A402D6FF3C4631F (void);
+// 0x0000007D System.Void VirtualGrasp.Scripts.VG_HandStatusDebugger::.ctor()
+extern void VG_HandStatusDebugger__ctor_m7185B498FC8AA846C153636161ABA260566114E5 (void);
+// 0x0000007E System.Void VirtualGrasp.Scripts.VG_HandVisualizer::OnEnable()
+extern void VG_HandVisualizer_OnEnable_mDE8C9D3B5BB0ACE3C4D11C4C50C5955E5418E589 (void);
+// 0x0000007F System.Void VirtualGrasp.Scripts.VG_HandVisualizer::OnDisable()
+extern void VG_HandVisualizer_OnDisable_m2FBD276C71360F35C221BBB7DF7D1311059EF0CE (void);
+// 0x00000080 System.Void VirtualGrasp.Scripts.VG_HandVisualizer::Visualize()
+extern void VG_HandVisualizer_Visualize_m435C253AFA9CE02C900E2BD1BE6EE3A9ADA44C8F (void);
+// 0x00000081 System.Void VirtualGrasp.Scripts.VG_HandVisualizer::.ctor()
+extern void VG_HandVisualizer__ctor_m419E59CBCFBBC99885BFE3A12179029A31F453F8 (void);
+// 0x00000082 UnityEngine.Color VirtualGrasp.Scripts.VG_Highlighter::GetColor(VirtualGrasp.VG_ReturnCode)
+extern void VG_Highlighter_GetColor_mD59EF1466F4E220584ADCD655ADC3D1F55C86B70 (void);
+// 0x00000083 System.Void VirtualGrasp.Scripts.VG_Highlighter::Start()
+extern void VG_Highlighter_Start_mDA89D523B1B59D7A6305AEB366956FE0F06E484F (void);
+// 0x00000084 System.Void VirtualGrasp.Scripts.VG_Highlighter::HighlightObjectStatus(System.Collections.Generic.HashSet`1<VirtualGrasp.VG_ReturnCode>)
+extern void VG_Highlighter_HighlightObjectStatus_m314D2117BBE7BD28EF959B9C443B11A027DFBFFD (void);
+// 0x00000085 System.Void VirtualGrasp.Scripts.VG_Highlighter::Highlight(VirtualGrasp.VG_HandStatus)
+extern void VG_Highlighter_Highlight_m9ADD91C0392FB07CE0C5F76C525794B122C2CE57 (void);
+// 0x00000086 System.Void VirtualGrasp.Scripts.VG_Highlighter::Unhighlight(VirtualGrasp.VG_HandStatus)
+extern void VG_Highlighter_Unhighlight_m1D8125ED53BD65853821D7628B87E0B7EF45BC89 (void);
+// 0x00000087 System.Void VirtualGrasp.Scripts.VG_Highlighter::.ctor()
+extern void VG_Highlighter__ctor_m0B5E8A902A09EF40C9DAEC923D172EF24207496E (void);
+// 0x00000088 System.Void VirtualGrasp.Scripts.VG_HintVisualizer::AddHintObject(System.Collections.Generic.List`1<UnityEngine.Transform>,System.String)
+extern void VG_HintVisualizer_AddHintObject_m3222D698886B8534A095F123498FAFED3F8C5F58 (void);
+// 0x00000089 System.Void VirtualGrasp.Scripts.VG_HintVisualizer::RemoveHintObjects()
+extern void VG_HintVisualizer_RemoveHintObjects_mE6070FCAF07F8F657B83CEA6773940B84E392A35 (void);
+// 0x0000008A System.Void VirtualGrasp.Scripts.VG_HintVisualizer::OnEnable()
+extern void VG_HintVisualizer_OnEnable_m6E7E6AA48E51A6837ED86CA4DA47E8759AEBF360 (void);
+// 0x0000008B System.Void VirtualGrasp.Scripts.VG_HintVisualizer::OnDisable()
+extern void VG_HintVisualizer_OnDisable_m34D4BD0EA3AE93800270D5C112EF06D55AF310F1 (void);
+// 0x0000008C System.Void VirtualGrasp.Scripts.VG_HintVisualizer::HintUpdate()
+extern void VG_HintVisualizer_HintUpdate_m937142A02EE83F6AD503AE1205002E3ABB78F6BD (void);
+// 0x0000008D System.Void VirtualGrasp.Scripts.VG_HintVisualizer::.ctor()
+extern void VG_HintVisualizer__ctor_mC32D4E1513036E106C8B4BA7FA29C3AAF083EAC4 (void);
+// 0x0000008E System.Void VirtualGrasp.Scripts.VG_ObjectAnimator::Awake()
+extern void VG_ObjectAnimator_Awake_mCE313E382D77684576D930AF0B0013422FFE4EA8 (void);
+// 0x0000008F System.Void VirtualGrasp.Scripts.VG_ObjectAnimator::Start()
+extern void VG_ObjectAnimator_Start_mEA5A1367C60790054101AABA0706DD3556C98577 (void);
+// 0x00000090 System.Void VirtualGrasp.Scripts.VG_ObjectAnimator::Translate(System.Single)
+extern void VG_ObjectAnimator_Translate_mFFB90B61FD3EB0BD6FB87DB0454354343620565B (void);
+// 0x00000091 System.Void VirtualGrasp.Scripts.VG_ObjectAnimator::Rotate(System.Single)
+extern void VG_ObjectAnimator_Rotate_mD559C55E3FEF444B0202CA2A81A09E2BE38875FF (void);
+// 0x00000092 System.Void VirtualGrasp.Scripts.VG_ObjectAnimator::.ctor()
+extern void VG_ObjectAnimator__ctor_mEADED366BC3EB922C348FF59CADF8CDF3BC08F3F (void);
+// 0x00000093 System.Void VirtualGrasp.Scripts.VG_PostAnimator::Start()
+extern void VG_PostAnimator_Start_mBB24E2F2C514C201BB7075DD9C17406D3765E1AC (void);
+// 0x00000094 System.Boolean VirtualGrasp.Scripts.VG_PostAnimator::GetOtherButtonTrigger(VirtualGrasp.VG_HandSide,System.Single&)
+extern void VG_PostAnimator_GetOtherButtonTrigger_m42E042266545459EB770DC54D2E42444063158A0 (void);
+// 0x00000095 System.Void VirtualGrasp.Scripts.VG_PostAnimator::Animate()
+extern void VG_PostAnimator_Animate_m1F214BDF6DFCC179489850CC92EA902AF16B80E7 (void);
+// 0x00000096 System.Void VirtualGrasp.Scripts.VG_PostAnimator::.ctor()
+extern void VG_PostAnimator__ctor_mA0DBE50207161A7262BAA24252B78473196337FF (void);
+static Il2CppMethodPointer s_methodPointers[150] = 
+{
+	VG_EC_GenericHand__ctor_mE9139DED7D9698E17E9F1F3DD1EE645174CB12DC,
+	VG_EC_GenericHand_Initialize_m31348DA83711F411A6D962C605415A6FEAB843BC,
+	VG_EC_GenericHand_Compute_m7C376987A04BC24BC506F67EDAFB689CAFFE47A8,
+	VG_EC_GenericHand_GetGrabStrength_m6CAE2B2D6CC83D8EE60F2FBE96EB521716C16F56,
+	VG_EC_GenericHand_GetConfidence_mD14A90D7731128D213234CD44FE9594ED475B525,
+	VG_EC_GenericHand_HapticPulse_m69AE8962F29EBD528CDACACDB827707BEF7056E2,
+	HandMapping_Initialize_m8ACB97B8FDF837F17D189F1F3AAC098E29A73478,
+	HandMapping__ctor_m087175A6B008D2B058FBD7CD59B9FE93F11D7559,
+	VG_EC_LeapHand__ctor_mB39993B4BEFE830C33AD580D5A1400A883DD70C4,
+	VG_EC_LeapHand_Initialize_m6774B16FABC8018DDAB271EF22C48C1E09E8E2F0,
+	VG_EC_LeapHand_Compute_mA75579B5D743E85C71321AB977051E7860C5A81D,
+	VG_EC_LeapHand_GetGrabStrength_mAA0826F1C90B3607A2D918D18FCE623FEA15E2B0,
+	VG_EC_LeapHand_GetConfidence_m17077D79063AEE5D5BC0458F01CDEC41812CBAEA,
+	VG_EC_LeapHand_HapticPulse_mC4B54327B57A7A280F108058BB8FAF7B72F756E7,
+	HandMapping_Initialize_mB59AC3F0CCB61C28400F59D00A29DA033B7DB8DC,
+	HandMapping__ctor_mA77B88E79D32A643ECF75A1472FE5085E83F64F5,
+	VG_EC_MouseHand__ctor_m6E1C1C9CC5F394B0729CD98C0386218B0AFFB390,
+	VG_EC_MouseHand_Initialize_m9DC65DA7D67F6BC0C4E3856A9C3BC5B3CD6FA20A,
+	VG_EC_MouseHand_Compute_mE210CF5A550A5EBAE0EA63AF01F44ACE522480F6,
+	VG_EC_MouseHand_GetGrabStrength_m7614FD0791D5C8AA725A5991928E61BB9DB5CF2F,
+	VG_EC_MouseHand_GetConfidence_m1F6AE243F439E5941AD03D5DE7C8CEEA80312144,
+	VG_EC_MouseHand_HapticPulse_mE1FCF2C839A003D4242E8E60B75337F74DB36F60,
+	HandMapping_Initialize_m61E5E35B2D7B4DD0CCC4F5D7754B8278E31528CD,
+	HandMapping__ctor_m2725F2BA7301ACAE3492C1C9D64B461A034EDD1E,
+	VG_EC_OculusHand__ctor_mD9AC913C4C3730F4E0A0907A4744C8A4EC67812A,
+	VG_EC_OculusHand_Initialize_m265BBBC91B71C7561AF2272BDA385FC8586CBA76,
+	VG_EC_OculusHand_GetGrabStrength_mF161A3148B70E7C38141D0265980C27C725EBF5F,
+	VG_EC_OculusHand_IsTracking_m948276EB4B94C0AD28EF103EF8F71DBF173BA15C,
+	VG_EC_OculusHand_Compute_m121D3C87BB862A458D59DC7CDD90373ABD10121D,
+	VG_EC_OculusHand_GetConfidence_m402B4A2E0997C29C1F674E7F98F3755011151E04,
+	VG_EC_OculusHand_HapticPulse_mA0621DB7ED0F3F480E251C1771ECA4F9CA1A7C19,
+	HandMapping_Initialize_mE4C62BA63F8D7A70FB9E37ABAC81832B5F6B9AAC,
+	HandMapping__ctor_m198BF04F9ED742D1883843FD702DDB0706B45CAC,
+	VG_EC_SteamHand__ctor_m7657989AEDC50DE3B61552B7FBFEF1D1FF5CED17,
+	VG_EC_SteamHand_Initialize_mCF5951DFBBC40B7287087A23A975618D8FFD2655,
+	VG_EC_SteamHand_GetGrabStrength_m45B9DA8E01DC66FD6DE5AC4DF69DBE069FC056C3,
+	VG_EC_SteamHand_Compute_m31AA8C8FBCF8E5DE8906C807E31F0CB4A707DD92,
+	VG_EC_SteamHand_HapticPulse_m3A81FEA7BCA1D479CC950491CEE6452EFDD6A014,
+	VG_EC_SteamHand_GetConfidence_m733DD726D7651FC063D3D72716E6CF2E45CD0588,
+	SteamHandMapping_Initialize_m6F72B66A50D4AE864E25ED6A1EE0B4B42C50F367,
+	SteamHandMapping__ctor_m5FC4CB64E2AEFE2FBF8E094499D90D4C46730312,
+	VG_EC_UnityInteractionHand__ctor_mC43E09F31F5C9774366C818D97BDEF66863C1006,
+	VG_EC_UnityInteractionHand_Initialize_mA2A12092753FC9FDB1A4A7C2A140F4D21B049B8D,
+	VG_EC_UnityInteractionHand_Compute_m70F0AAC50FC0725DC4373239F825DA2F7E462AE8,
+	VG_EC_UnityInteractionHand_GetGrabStrength_mB4821B5AB79756978CC51D52B093BC756A47D5DE,
+	VG_EC_UnityInteractionHand_GetConfidence_m33F9783D4B51192B398AE2104893F320E3742FC3,
+	VG_EC_UnityInteractionHand_HapticPulse_mD7620F9F6EBF870F313EB38D603CA010456FE331,
+	HandMapping_Initialize_m90BC406DD05C8E51BDD62AA6B055D774B9D40066,
+	HandMapping__ctor_mB331040E94C3501953F6E4F96140B5D410338577,
+	VG_EC_UnityXRHand__ctor_mCBDC43871AFF2423E5423C94FF0B9B5E037AFD78,
+	VG_EC_UnityXRHand_Initialize_mE9EA4116C0239A04259A0064F050EFCFC3577CB5,
+	VG_EC_UnityXRHand_Compute_m2D6C8685D64499C6BBC0A5BE1D33945E302F6EF3,
+	VG_EC_UnityXRHand_GetGrabStrength_m30C8D48959CA6D772E82908571FB135B0D21D5D6,
+	VG_EC_UnityXRHand_GetConfidence_mEFB8450E59C26A4B3A4680D25521C1F0D3466259,
+	VG_EC_UnityXRHand_HapticPulse_m10F2F6F627EF5288A7BC90D390D7AD8349425CF6,
+	HandMapping_Initialize_m2226BA3B35A64762EED43BDD16D19918ABEB17F1,
+	HandMapping__ctor_m53D4859EC157E7A64C8B5A0B05996FE910E874B7,
+	MyVirtualGrasp_Awake_mD60648E03BBEEECAA665FD93703B46618B415919,
+	MyVirtualGrasp_Update_mABD5B3C460C2331046FF20CEA4ABDC41C507D949,
+	MyVirtualGrasp_FixedUpdate_m42FA24B7EF1E7BCCCAD7848C24BCDD4F5E29C8CA,
+	MyVirtualGrasp_OnApplicationQuit_mBF7FA69994F296500FBADBEA9A360F03A3FE3F91,
+	MyVirtualGrasp_OnApplicationPause_mB0E5C1507FEC7FD1C344FFF9187985E477CE7BAC,
+	MyVirtualGrasp_SaveState_m6463EE19B00C8F19F22BF2B53E3C43A2268BAD55,
+	MyVirtualGrasp__ctor_m0138F1FE6DAB275EDE77A868982A40AB38B24696,
+	VG_AnimationDriver_Awake_m98A208EDDF28FF5CCC3D2E84FA6B4A944D1303FE,
+	VG_AnimationDriver_OnEnable_mF3CC04A2BD72EDDEED7CE909FCAB49AB4789D960,
+	VG_AnimationDriver_OnDisable_m948353E1D3743F1E4DC4DFB10BBABE11A788CEB5,
+	VG_AnimationDriver_Start_mB44E21DB585E15EBB15D553FCCE3BDD9A519E5A9,
+	VG_AnimationDriver_Update_m6A8CEDE4245D4555C6BFC12FB405E96566390788,
+	VG_AnimationDriver_OnObjectInteractionChanged_mED3995D90FC27769EB92F2F86DF057E18AA65C50,
+	VG_AnimationDriver__ctor_m96CA5F9F2931AB32AB1B5AE7DC5DA4812D2FD3B6,
+	VG_Assemble_Start_mDE205A9E1FE4C1D366248E3C1ACF670438E408B1,
+	VG_Assemble_LateUpdate_mC68C4417D42F31788384B9F357C28FD410179E62,
+	VG_Assemble_assembleByJointChange_mD3421C41946F754085EB42063C8D44E58D3C9092,
+	VG_Assemble_disassembleByJointChange_m2B64C8B8872483F2A9BEDC75A90F5B04DBE5982C,
+	VG_Assemble_isZeroState_mAB679070EF002839FCA03BE38F72EAA28A95B6F8,
+	VG_Assemble_getSensorControlledAnchorPose_mE31FB0243D03098867AB39337863CA54A1E86EAA,
+	VG_Assemble_findTarget_m0E8CB3AB00703E7357E7E8535A1D00E121A2F278,
+	VG_Assemble_closeToTargetPose_m595B5B323560C36111EB5C35FB2E07236C81CE5F,
+	VG_Assemble__ctor_m1E483D27E68AC5B640A2A4B46587BA805FD90A88,
+	VG_ExternalControllerManager_Initialize_mB70C1B14605CDF27D7A7D3551A68E067815AEDF2,
+	VG_ExternalControllerManager_RegisterExternalController_m1C32E101D1B3A1BC0D2CC6C6BEDE512C69505E59,
+	VG_ExternalControllerManager__ctor_mA4B6C55A1450D12590C75944967F3737EDBA1E61,
+	VG_FingerAnimator_DriveAnimation_m4E07B1CBF7F4807D7D181366DDA8EE92FD5E2315,
+	VG_FingerAnimator_StopAnimationDrive_m4B3B7960C3F1C504AD07A3CE8B01CD8BC0880746,
+	VG_FingerAnimator_GetHandSide_mAC7A29B121813DCC6074F15C7E07D091F96DC6E6,
+	VG_FingerAnimator_Start_mB53AB573CACAC27D17DEF726C2E219D512231D8D,
+	VG_FingerAnimator_OnObjectInteractionChanged_m19F9E34835A6595D62722BD9EF4A6A345846993E,
+	VG_FingerAnimator_OnEnable_m885EE033AB664B959B239C39B18FF21B6FA80332,
+	VG_FingerAnimator_OnDisable_m3E483AD49BA951115CF8EDE55EC252224663BECE,
+	VG_FingerAnimator_Animate_mA17715DB1BF5CB12CD48F09C98C7F4EABDD97E15,
+	VG_FingerAnimator_AnimateFingerBone_mAB7C122DEEE7083ECC72133AE90401C2C3558FF2,
+	VG_FingerAnimator_GetAvatars_mEF92FA15B2B5E9912E86EF8926F513EEF8453AA9,
+	VG_FingerAnimator__ctor_mCF7A0DC41B8511EDE442FC443831AC84DE4D7B33,
+	VG_FingerAnimationData_BoneEnumFromIndex_m4F87117806C7229838FEE0D506BE9300E1CD1C77,
+	VG_FingerAnimationData_FingerEnumFromIndex_mFED97549E955BD5EC2466D915E9DEFBE4E5C75B5,
+	VG_FingerAnimationData__ctor_m1FDFF8B13D9DF575C26A882AC14424104AE35D8D,
+	AnimationEvents__ctor_mEB1F268A1862424CBE9B14A1DDA0C1F5EE1C8804,
+	VG_GraspEditor_Start_mBC84E02EF4F6ED2FFA5591DECFDEF818A9E680DE,
+	VG_GraspEditor_IsValidObject_m9A30A0242BAFC7BA6CC19178F412B8F008CCD905,
+	VG_GraspEditor_AddGrasp_m316BE688059B7BCAFCCAE878B5218AA9B428A85B,
+	VG_GraspEditor_ValidateAddGrasp_mEA02D6E7540EBE94AFD908A11D6CD521666EED85,
+	VG_GraspEditor_ToggleInteraction_m177A2806062E8DFBED33695B3817843839B8280E,
+	VG_GraspEditor_StepGrasp_m440043DCFFF6FB5548BA7187ECE5DF8DD66E0C64,
+	VG_GraspEditor_ValidateToggleInteraction_m690DB76EF7D92AF11541A932D489CC6FEDFB5870,
+	VG_GraspEditor_ValidateStepGrasp_m2E95769F456BC93A6015C87D28BFFADB6455EA0F,
+	VG_GraspEditor_ValidateDeleteGrasp_m71BDE2BCDC099C696AB5980D08C88412E42B7BE5,
+	VG_GraspEditor_ValidateDeleteAllGrasp_m7D718C660EF59F933092E9F3B200C282098CDD3C,
+	VG_GraspEditor_DeleteGrasp_m35EF8E68AB9395A4C979AAABD95309181550B00E,
+	VG_GraspEditor_DeleteAllGrasp_m6C5210B560D01A8BFCBD8822983321F6997CBF03,
+	VG_GraspEditor_Update_m9930B16C7AD0B9C3A77D37C5F4CD1D75E992BA8D,
+	VG_GraspEditor__ctor_m2A589F72FB51B9049E2B1419B429DA0209CC60D8,
+	EditFunction__ctor_m6AAA012C3C1D704159474D58CE811CBFBF2F78C5,
+	EditFunction_Invoke_m31E8121DFDD11A3B9A9C848EEAFEF7F2B5E14E44,
+	EditFunction_BeginInvoke_m8FD419E4ADC7EE3CDCBCD3ABB410697C51F84C54,
+	EditFunction_EndInvoke_m86BDD0085D93B5DF88FCB9B935688629FEC9B8F3,
+	ValidateFunction__ctor_m77C54573E8ADDF2EC438C075F92887785CFCB23C,
+	ValidateFunction_Invoke_m345D6F2632D0F455EF3F68618A7E1F3524EEE037,
+	ValidateFunction_BeginInvoke_m6F6DCFBC62E971FF726B3DDE867B30E5951EA896,
+	ValidateFunction_EndInvoke_m6B7A8EB05B397F335393DE9D231E16B6BF1E7BDE,
+	ButtonContainer__ctor_m98B95B427038D616D9FBFDF1DC99A87FA9884E8F,
+	ButtonContainer_Validate_m75C021A89F69C40F80844905F753D0245C60F4DF,
+	ButtonContainer_Trigger_m883F1FC3CC2F7D3C89949A550D0A4C4B0FF651BE,
+	ButtonContainer__cctor_m4B9FE5B5430804D3D9744F177A402D6FF3C4631F,
+	VG_HandStatusDebugger__ctor_m7185B498FC8AA846C153636161ABA260566114E5,
+	VG_HandVisualizer_OnEnable_mDE8C9D3B5BB0ACE3C4D11C4C50C5955E5418E589,
+	VG_HandVisualizer_OnDisable_m2FBD276C71360F35C221BBB7DF7D1311059EF0CE,
+	VG_HandVisualizer_Visualize_m435C253AFA9CE02C900E2BD1BE6EE3A9ADA44C8F,
+	VG_HandVisualizer__ctor_m419E59CBCFBBC99885BFE3A12179029A31F453F8,
+	VG_Highlighter_GetColor_mD59EF1466F4E220584ADCD655ADC3D1F55C86B70,
+	VG_Highlighter_Start_mDA89D523B1B59D7A6305AEB366956FE0F06E484F,
+	VG_Highlighter_HighlightObjectStatus_m314D2117BBE7BD28EF959B9C443B11A027DFBFFD,
+	VG_Highlighter_Highlight_m9ADD91C0392FB07CE0C5F76C525794B122C2CE57,
+	VG_Highlighter_Unhighlight_m1D8125ED53BD65853821D7628B87E0B7EF45BC89,
+	VG_Highlighter__ctor_m0B5E8A902A09EF40C9DAEC923D172EF24207496E,
+	VG_HintVisualizer_AddHintObject_m3222D698886B8534A095F123498FAFED3F8C5F58,
+	VG_HintVisualizer_RemoveHintObjects_mE6070FCAF07F8F657B83CEA6773940B84E392A35,
+	VG_HintVisualizer_OnEnable_m6E7E6AA48E51A6837ED86CA4DA47E8759AEBF360,
+	VG_HintVisualizer_OnDisable_m34D4BD0EA3AE93800270D5C112EF06D55AF310F1,
+	VG_HintVisualizer_HintUpdate_m937142A02EE83F6AD503AE1205002E3ABB78F6BD,
+	VG_HintVisualizer__ctor_mC32D4E1513036E106C8B4BA7FA29C3AAF083EAC4,
+	VG_ObjectAnimator_Awake_mCE313E382D77684576D930AF0B0013422FFE4EA8,
+	VG_ObjectAnimator_Start_mEA5A1367C60790054101AABA0706DD3556C98577,
+	VG_ObjectAnimator_Translate_mFFB90B61FD3EB0BD6FB87DB0454354343620565B,
+	VG_ObjectAnimator_Rotate_mD559C55E3FEF444B0202CA2A81A09E2BE38875FF,
+	VG_ObjectAnimator__ctor_mEADED366BC3EB922C348FF59CADF8CDF3BC08F3F,
+	VG_PostAnimator_Start_mBB24E2F2C514C201BB7075DD9C17406D3765E1AC,
+	VG_PostAnimator_GetOtherButtonTrigger_m42E042266545459EB770DC54D2E42444063158A0,
+	VG_PostAnimator_Animate_m1F214BDF6DFCC179489850CC92EA902AF16B80E7,
+	VG_PostAnimator__ctor_mA0DBE50207161A7262BAA24252B78473196337FF,
+};
+static const int32_t s_InvokerIndices[150] = 
+{
+	2734,
+	7035,
+	6795,
+	6964,
+	6797,
+	1099,
+	2734,
+	7035,
+	2734,
+	7035,
+	6795,
+	6964,
+	6797,
+	1099,
+	2734,
+	7035,
+	2734,
+	7035,
+	6795,
+	6964,
+	6797,
+	1099,
+	2734,
+	7035,
+	1468,
+	7035,
+	6964,
+	6795,
+	6795,
+	6797,
+	1099,
+	2734,
+	7035,
+	2734,
+	7035,
+	6964,
+	6795,
+	1099,
+	6797,
+	2734,
+	7035,
+	2734,
+	7035,
+	6795,
+	6964,
+	6797,
+	1099,
+	2734,
+	7035,
+	2734,
+	7035,
+	6795,
+	6964,
+	6797,
+	1099,
+	2734,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	5544,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	3862,
+	1504,
+	3766,
+	597,
+	7035,
+	11776,
+	10295,
+	7035,
+	5605,
+	7035,
+	6867,
+	7035,
+	5544,
+	7035,
+	7035,
+	7035,
+	1004,
+	6899,
+	7035,
+	11342,
+	11342,
+	7035,
+	7035,
+	7035,
+	3894,
+	5544,
+	1830,
+	5544,
+	5544,
+	1830,
+	1830,
+	1830,
+	1830,
+	5544,
+	5544,
+	7035,
+	7035,
+	3033,
+	5544,
+	1339,
+	5544,
+	3033,
+	1830,
+	911,
+	1756,
+	1550,
+	3894,
+	1833,
+	12655,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	4234,
+	7035,
+	5544,
+	5544,
+	5544,
+	7035,
+	3038,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	7035,
+	5605,
+	5605,
+	7035,
+	7035,
+	1792,
+	7035,
+	7035,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_VG_Scripts_CodeGenModule;
+const Il2CppCodeGenModule g_VG_Scripts_CodeGenModule = 
+{
+	"VG_Scripts.dll",
+	150,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

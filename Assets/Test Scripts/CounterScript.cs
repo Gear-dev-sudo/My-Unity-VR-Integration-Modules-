@@ -54,6 +54,7 @@ public class CounterScript : MonoBehaviour
             if (currentCounterValue > 75)
             {
                 Alarm();
+                FindObjectOfType<SwitchInd>().switchPullRequired = true;
             }
         }
     }
@@ -72,7 +73,7 @@ public class CounterScript : MonoBehaviour
     }
     IEnumerator FlashText()
     {
-        humidCnt.color = Color.black;
+        humidCnt.color = Color.blue;
 
         yield return new WaitForSeconds(0.5f);
 
