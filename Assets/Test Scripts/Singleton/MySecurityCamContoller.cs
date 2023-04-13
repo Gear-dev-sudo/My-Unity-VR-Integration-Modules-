@@ -15,7 +15,7 @@ using UnityEngine;
 {
         
         public int camCount;
-
+        public TMPro.TMP_Text camCNT;
         void Start()
         {
             camCount = 0;
@@ -23,6 +23,7 @@ using UnityEngine;
         public void addCam()
         {
             camCount++;
+            camCNT.text = camCount.ToString();
         }
 
 

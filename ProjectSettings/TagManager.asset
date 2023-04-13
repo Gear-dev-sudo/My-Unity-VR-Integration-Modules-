@@ -8,6 +8,7 @@ TagManager:
   - Right Hand
   - Climbable
   - Inventory
+  - Fire
   layers:
   - Default
   - TransparentFX
