@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3629335327706145522}
   - component: {fileID: 3526883197080939572}
   - component: {fileID: 3498960965063852572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FireEmbers (4)
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -4749,13 +4749,13 @@ GameObject:
   - component: {fileID: 3624764029100235999}
   - component: {fileID: 3497244544859245600}
   - component: {fileID: 3497244544859245603}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FireBall 1
   m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3621821089869545156
 Transform:
   m_ObjectHideFlags: 0
@@ -9703,3 +9703,4 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: 9e43d9b076d782e42bdf9853db9b2c14, type: 3}
   volume: 1
   fireIndGameObject: {fileID: 0}
+  myScoreSingleton: {fileID: 0}
