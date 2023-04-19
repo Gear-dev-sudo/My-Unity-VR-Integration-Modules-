@@ -1,0 +1,5 @@
+If you're seeing file conflicts when updating the asset, please do the following:
+    1. Delete the old asset folder ("ChatGPT Script Generator"),
+    2. Re-import the asset using Package Manager.
+
+All your settings will be preserved.

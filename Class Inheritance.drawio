@@ -1,21 +1,28 @@
 <mxfile host="65bd71144e">
     <diagram id="oWx1CMlj1S1pF4CIYpkc" name="Page-1">
-        <mxGraphModel dx="2444" dy="1037" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
+        <mxGraphModel dx="1523" dy="770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="154" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                    <mxGeometry x="2170" y="445" width="600" height="340" as="geometry"/>
+                </mxCell>
                 <mxCell id="39" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
-                    <mxGeometry x="150" y="700" width="1160" height="450" as="geometry"/>
+                    <mxGeometry x="150" y="700" width="1250" height="450" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="230" y="320"/>
+                            <mxPoint x="150" y="320"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="8" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="6" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="490" y="310"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="12" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -45,20 +52,27 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="152" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="150">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="320" y="320"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="2" value="Base Interactable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
                     <mxGeometry x="380" y="215" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="Simple Interactable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
-                    <mxGeometry x="170" y="370" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="90" y="370" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="Simple Implementation of an Interactable(Need To Add Code For It to Work)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="150" y="440" width="160" height="50" as="geometry"/>
+                    <mxGeometry x="70" y="430" width="160" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="XR Push Button" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
-                    <mxGeometry x="380" y="370" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="435" y="370" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="&amp;nbsp;Implementation of a Customizable Functioning Button&lt;b&gt; (No additional Coding Required) (No Physics Involved)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="360" y="440" width="160" height="50" as="geometry"/>
+                    <mxGeometry x="410" y="450" width="160" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="9" target="13" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -141,6 +155,13 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="147" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="31" target="146" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1315" y="900"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="31" value="MonoBehaviour" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
                     <mxGeometry x="560" y="800" width="120" height="60" as="geometry"/>
                 </mxCell>
@@ -160,7 +181,7 @@
                     <mxGeometry x="555" y="720" width="190" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="40" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
-                    <mxGeometry x="1420" y="805" width="570" height="450" as="geometry"/>
+                    <mxGeometry x="1420" y="805" width="1100" height="450" as="geometry"/>
                 </mxCell>
                 <mxCell id="41" value="&lt;h1&gt;Scripts For XR Origin&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" parent="1" vertex="1">
                     <mxGeometry x="1583.75" y="835" width="290" height="60" as="geometry"/>
@@ -172,8 +193,12 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="49" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="42" target="45" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="49" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="42" target="45" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1649" y="1000"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="64" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;" parent="1" source="42" target="62" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -182,8 +207,29 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="142" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="42" target="140" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2040" y="1000"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="145" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="42" target="143" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2180" y="1000"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="158" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="42" target="155">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2320" y="1000"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="42" value="MonoBehaviour" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
-                    <mxGeometry x="1588.75" y="915" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="1723.75" y="915" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="43" value="Toggle Ray" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
                     <mxGeometry x="1453.75" y="1035" width="100" height="60" as="geometry"/>
@@ -198,7 +244,7 @@
                     <mxGeometry x="1581.25" y="1105" width="115" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="50" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
-                    <mxGeometry x="150" y="1230" width="1040" height="450" as="geometry"/>
+                    <mxGeometry x="150" y="1230" width="1190" height="450" as="geometry"/>
                 </mxCell>
                 <mxCell id="51" value="&lt;h1&gt;Scripts For Managing Scenes&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" parent="1" vertex="1">
                     <mxGeometry x="250" y="1255" width="250" height="70" as="geometry"/>
@@ -221,6 +267,20 @@
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="860" y="1420"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="138" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="52" target="137" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1025" y="1420"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="160" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="52" target="159">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1200" y="1420"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -388,7 +448,7 @@
                 <mxCell id="116" value="Generates TeleportRequest To a Specific Spot For Manager to handle, with&amp;nbsp; Safe Delete of the interfering Collider of the Reticle Object" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1255" y="630" width="160" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="117" value="SpwanFromList" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
+                <mxCell id="117" value="SpawnFromList" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="800" y="1460" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="120" value="Spawn designated Object From a list&amp;nbsp; of Preconfigured Prefabs, Could Designate a Spwan Point." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -423,6 +483,51 @@
                 </mxCell>
                 <mxCell id="136" value="Sets the Volume of an audio file with a configurable step." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="2390" y="320" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="Object Spawner" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="965" y="1460" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="Spawn designated Object From a list&amp;nbsp; of Preconfigured Prefabs, Could Designate a Spwan Point." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="945" y="1530" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="140" value="ClimbProvider" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B09500;fillColor=#e3c800;gradientDirection=north;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="1990" y="1035" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="141" value="Handles the ClimbEvent and provide the motion(REQUIRES CUSTOME INPUTATION)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1982.5" y="1105" width="115" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="ClimbGravity&lt;br&gt;Controller" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B09500;fillColor=#e3c800;gradientDirection=north;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="2130" y="1035" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" value="When the player is Not CLimbing, make the player respond to Gravity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="2122.5" y="1105" width="115" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="146" value="BlinkingLights" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
+                    <mxGeometry x="1255" y="940" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="149" value="Make all the lights attached to the child object&amp;nbsp; blink, customizable color and frequency." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1235" y="1020" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" value="XR Lever" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="370" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" value="&amp;nbsp;Implementation of a Customizable Functioning Lever&lt;b&gt; (No additional Coding Required) (No Physics Involved)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="450" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="&lt;h1&gt;Scripts For XR Controller&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" vertex="1" parent="1">
+                    <mxGeometry x="2350" y="460" width="240" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="155" value="XR Button Controller" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#6F0000;fillColor=#a20025;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="2270" y="1030" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="156" value="Trigger Customizable Events after button presses" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="2250" y="1122.5" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" value="ControllerRecorder" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="1140" y="1460" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="161" value="Log the Controller Button Presses&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1120" y="1530" width="160" height="70" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

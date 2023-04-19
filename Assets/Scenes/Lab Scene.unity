@@ -8152,7 +8152,7 @@ PrefabInstance:
       objectReference: {fileID: 1636568279}
     - target: {fileID: 6639350956861897140, guid: 4166edc39566b51499f08e868c0fb949, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Welcome Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 6639350956861897143, guid: 4166edc39566b51499f08e868c0fb949, type: 3}
       propertyPath: m_Pivot.x
@@ -10359,6 +10359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireBall 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3624082932366984180, guid: ed0c43dc909df984787e2a6384381006, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed0c43dc909df984787e2a6384381006, type: 3}
 --- !u!1 &1205781851
@@ -10943,6 +10947,37 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1255655971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1255655972}
+  m_Layer: 0
+  m_Name: XR Logger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1255655972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255655971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.137941, y: 2.2321591, z: -7.5195074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1264207549
 GameObject:
   m_ObjectHideFlags: 0
@@ -14557,8 +14592,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 3624082932366984180, guid: ed0c43dc909df984787e2a6384381006, type: 3}
-  minSpawnTime: 100
-  maxSpawnTime: 180
+  minSpawnTime: 1
+  maxSpawnTime: 100
   xRange: 5.14
   zRange: 3.08
 --- !u!4 &1500977344

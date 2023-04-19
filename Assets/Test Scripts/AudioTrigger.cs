@@ -42,6 +42,7 @@ public class AudioTrigger : MonoBehaviour
     void OnDestroy()
     {
         {
+            CancelInvoke();
             fireIndGameObject.GetComponent<FireIndScript>().FireStarted = false;
             fireIndGameObject.GetComponent<TMPro.TMP_Text>().alpha = 0;
         }

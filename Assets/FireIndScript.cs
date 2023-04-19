@@ -24,6 +24,10 @@ public class FireIndScript : MonoBehaviour
             Alarm();
             FindObjectOfType<SwitchInd>().switchPullRequired = true;
         }
+        else
+        {
+            text.alpha = 0;
+        }
     }
 
     private void Alarm()
