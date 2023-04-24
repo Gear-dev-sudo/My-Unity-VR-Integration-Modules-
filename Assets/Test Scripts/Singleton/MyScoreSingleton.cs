@@ -8,6 +8,8 @@ public class MyScoreSingleton : MonoBehaviour
 {
     [Tooltip("The current highscore.")]
     public int highscore = 0;
+    public string highscoreName;
+    public string currentName;
 
     [Tooltip("The current score.")]
     public int score = 0;
@@ -18,6 +20,7 @@ public class MyScoreSingleton : MonoBehaviour
     {
         // Load the highscore from player prefs.
         highscore = PlayerPrefs.GetInt("Highscore", 0);
+        highscoreName = PlayerPrefs.GetString("HighscoreName", "");
         budgetController = GameObject.FindObjectOfType<BudgetController>();
     }
 
@@ -53,6 +56,7 @@ public class MyScoreSingleton : MonoBehaviour
 
         // Save the highscore to player prefs.
         PlayerPrefs.SetInt("Highscore", highscore);
+        PlayerPrefs.SetString("HighscoreName", currentName);
 
         // Notify listeners of the highscore change.
         SendMessage("OnHighscoreChanged", highscore, SendMessageOptions.DontRequireReceiver);
