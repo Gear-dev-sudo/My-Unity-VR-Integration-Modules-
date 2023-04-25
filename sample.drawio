@@ -1,0 +1,76 @@
+<mxfile host="65bd71144e">
+    <diagram id="kldG0cRUDw7tCzsneLL4" name="Page-1">
+        <mxGraphModel dx="1662" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                    <mxGeometry x="2170" y="80" width="600" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;h1&gt;Scripts For Managing DCCs&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" vertex="1" parent="1">
+                    <mxGeometry x="2350" y="95" width="240" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="PlayVideo" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                    <mxGeometry x="2240" y="235" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Converts the material used by a game object to the video stream, thus plays a Video. &lt;b&gt;(Start,Stop,Pause,Skip functions Implemented)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="2210" y="320" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="SetVolume" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                    <mxGeometry x="2420" y="235" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Sets the Volume of an audio file with a configurable step." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="2390" y="320" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Fbx_Converter" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                    <mxGeometry x="2610" y="235" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Converts The Common Stl files to FBX files for Unity&lt;br&gt;(WITH GUI)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="2580" y="320" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                    <mxGeometry x="2170" y="80" width="600" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;h1&gt;Scripts For Managing DCCs&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" vertex="1" parent="1">
+                    <mxGeometry x="2350" y="95" width="240" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="PlayVideo" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#6F0000;fillColor=#a20025;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="2240" y="235" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Converts the material used by a game object to the video stream, thus plays a Video. &lt;b&gt;(Start,Stop,Pause,Skip functions Implemented)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="2210" y="320" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="SetVolume" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#6F0000;fillColor=#a20025;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="2420" y="235" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Sets the Volume of an audio file with a configurable step." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="2390" y="320" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Fbx_Converter" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#6F0000;fillColor=#a20025;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="2610" y="235" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Converts The Common Stl files to FBX files for Unity&lt;br&gt;(WITH GUI)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="2580" y="320" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Classes Tailored for Specialized use in Prefabs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1420" y="915" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+                    <mxGeometry x="1350" y="810" width="60" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Utility Class" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1420" y="815" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Unity&lt;br&gt;XRI Provided" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=0;" vertex="1" parent="1">
+                    <mxGeometry x="1420" y="865" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+                    <mxGeometry x="1350" y="860" width="60" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+                    <mxGeometry x="1350" y="910" width="60" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
