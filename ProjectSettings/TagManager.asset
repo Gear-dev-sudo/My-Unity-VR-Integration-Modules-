@@ -9,6 +9,7 @@ TagManager:
   - Climbable
   - Inventory
   - Fire
+  - WhiteBoard
   layers:
   - Default
   - TransparentFX

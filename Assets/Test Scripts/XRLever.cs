@@ -79,7 +79,7 @@ namespace my_unity_integration
             direction.x = 0;
             direction.y = Mathf.Clamp(direction.y, 0, 1);
 
-            return direction;
+            return -direction;
         }
 
         private void ApplyValue(SelectExitEventArgs eventArgs)
@@ -94,12 +94,12 @@ namespace my_unity_integration
         private bool InOnPosition(Vector3 interactorPosition)
         {
             interactorPosition = transform.InverseTransformPoint(interactorPosition);
-            return (interactorPosition.z > 0);
+            return (interactorPosition.z < 0);
         }
 
         private void FindSnapDirection(bool isOn)
         {
-            handle.forward = isOn ? transform.forward : -transform.forward;
+            handle.forward = isOn ? -transform.forward : transform.forward;
         }
 
         private void SetValue(bool isOn)

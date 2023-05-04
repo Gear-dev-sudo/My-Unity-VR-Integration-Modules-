@@ -26,8 +26,8 @@ namespace my_unity_integration
         protected override void OnHoverEntered(HoverEnterEventArgs args)
         {
             base.OnHoverEntered(args);
-            args.interactable.transform.position = hoverMeshTransform.position;
-            args.interactable.transform.rotation = hoverMeshTransform.rotation;
+            args.interactableObject.transform.position = hoverMeshTransform.position;
+            args.interactableObject.transform.rotation = hoverMeshTransform.rotation;
         }
 
         private IEnumerator DisableSocket()
