@@ -9,11 +9,10 @@ public class BlinkingLights : MonoBehaviour
     [Tooltip("The maximum blinking rate in seconds.")]
     public float maxBlinkRate = 5f;
 
-    public static Color e_blue = new Color(9, 9, 207);
-    public static Color e_green = new Color(5, 166, 86);
         
     [Tooltip("The colors to choose from for the blinking light.")]
-    public Color[] colors = { e_blue, e_green };
+    [SerializeField]
+    public Color[] colors = { Color.blue, Color.green };
 
     private Light[] lights;
 

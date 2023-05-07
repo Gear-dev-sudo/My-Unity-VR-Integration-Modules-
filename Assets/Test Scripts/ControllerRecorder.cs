@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(XRController))]
-[RequireComponent(typeof(XRInteractorLineVisual))]
+
 public class ControllerRecorder : MonoBehaviour
 {
     [Tooltip("Choose which buttons to check")]
@@ -21,8 +20,8 @@ public class ControllerRecorder : MonoBehaviour
 
     private List<Dictionary<InputHelpers.Button, bool>> buttonStates;
 
-    private XRController controller;
-    private string filePath = "log_file.txt";
+    public XRController controller;
+    public string filePath = "log_file.txt";
 
     void Start()
     {

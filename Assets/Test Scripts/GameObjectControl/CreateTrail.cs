@@ -13,10 +13,10 @@ namespace my_unity_integration
         
         public GameObject trailPrefab = null;
 
-        private float width = 0.05f;
-        private Color color = Color.white;
+        public float width = 0.05f;
+        public Color color = Color.white;
 
-        private GameObject currentTrail = null;
+        public GameObject currentTrail = null;
         public  void  Start()
         {
             if (trailPrefab != null)

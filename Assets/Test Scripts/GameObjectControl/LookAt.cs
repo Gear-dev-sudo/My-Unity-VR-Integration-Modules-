@@ -14,9 +14,9 @@ namespace my_unity_integration
         }
         
 
-        [Tooltip("the offset to the target to look at, for example")]
+        
         public Vector3 positionOffset = new Vector3(0, 1.5f, 0);
-        public float moveSpeedFactor = 3.0f;
+        
 
         void Update()
         {

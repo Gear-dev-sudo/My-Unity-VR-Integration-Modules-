@@ -19,13 +19,16 @@ public class ObjectSpawner : MonoBehaviour
     {
         // Set the initial spawn time.
         nextSpawnTime = Time.time + Random.Range(minSpawnTime, maxSpawnTime);
+        Debug.Log("NextSpawn"+nextSpawnTime);
     }
 
     private void Update()
     {
+        
         // Check if it's time to spawn.
         if (Time.time >= nextSpawnTime)
         {
+            Debug.Log("Fire: "+"TimeStamp:"+Time.time);
             // Generate a random spawn point.
             Vector3 spawnPoint = new Vector3(Random.Range(-xRange, xRange), transform.position.y, Random.Range(-zRange, zRange));
 

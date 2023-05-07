@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 123845868}
   - component: {fileID: 123845872}
   - component: {fileID: 123845873}
+  - component: {fileID: 123845874}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -466,7 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1251035848}
-  followPosition: 0
+  followPosition: 1
   positionFollowType: 0
   positionForceMult: 1000
   useFixedUpdatePos: 0
@@ -479,7 +480,7 @@ MonoBehaviour:
   useFixedUpdateRot: 0
   rotationOffset: {x: 0, y: 0, z: 0, w: 1}
   rotationOffsetVector3: {x: 0, y: 0, z: 0}
-  useVector3RotationOffset: 0
+  useVector3RotationOffset: 1
   rotationOffsetCoordinateSystem: 1
   singleAxisRotation: 0
   singleAxisRotationAxis: 0
@@ -499,7 +500,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1536317845}
   positionOffset: {x: 0, y: 1.5, z: 0}
-  moveSpeedFactor: 3
+--- !u!114 &123845874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123845866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b246c01bb0954469523d5622a1dbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailPrefab: {fileID: 0}
+  width: 0.05
+  color: {r: 1, g: 1, b: 1, a: 1}
+  currentTrail: {fileID: 0}
 --- !u!114 &184651132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3723,6 +3739,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trailPrefab: {fileID: 4057744988413614840, guid: 9f4633a97e325fb49a27872d4bbac009, type: 3}
+  width: 0.05
+  color: {r: 1, g: 1, b: 1, a: 1}
+  currentTrail: {fileID: 0}
 --- !u!114 &1573592117
 MonoBehaviour:
   m_ObjectHideFlags: 0

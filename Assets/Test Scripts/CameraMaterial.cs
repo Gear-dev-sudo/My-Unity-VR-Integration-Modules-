@@ -17,14 +17,14 @@ public class CameraMaterial : MonoBehaviour
         renderTexture = new RenderTexture(256,256,16);
         renderTexture.Create();
         material = targetObject.GetComponent<MeshRenderer>().material;
-        
+         cameraComponent.forceIntoRenderTexture = true;
+        cameraComponent.targetTexture = renderTexture;
+        material.mainTexture = renderTexture;
     }
     MeshRenderer mR;
     void Update()
     {
-        cameraComponent.forceIntoRenderTexture = true;
-        cameraComponent.targetTexture = renderTexture;
-        material.mainTexture = renderTexture;
+       
     }
     void OnDestroy()
     {
