@@ -154,7 +154,7 @@ namespace my_unity_integration
                 args.interactableObject.transform.position = (args.interactorObject).transform.position;
                 Debug.LogWarning("interactableObject position"+ args.interactableObject.transform.position+ args.interactableObject.transform.localPosition);
                
-                args.interactableObject.transform.position = (args.interactableObject.transform.gameObject.transform.position - attachPoint.localPosition);
+                //args.interactableObject.transform.position = (args.interactableObject.transform.gameObject.transform.position - attachPoint.localPosition);
                 Debug.LogWarning("MOVING TO" + args.interactableObject.transform.position);
                 //Time.timeScale = 0;
             }
@@ -214,8 +214,11 @@ namespace my_unity_integration
                 // 将游戏对象附加到交互器上
                 transform.SetParent(_interactor.transform, true);
                 transform.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+                Debug.LogWarning("Move123"+ attachTransform.localPosition);
+                transform.localPosition -= attachTransform.localPosition;
                 transform.localPosition += attachPositionOffset;
                 Debug.LogWarning("Debug Rotation: _attachInitialRotation" + _attachInitialRotation.eulerAngles);
+
                 transform.localRotation = Quaternion.Euler(attachRotationOffset) * Quaternion.Inverse( _attachInitialRotation);
 
             }
