@@ -26,11 +26,7 @@ public class MyScoreSingleton : MonoBehaviour
 
     private void Start()
     {
-        // Set the highscore if it exists.
-        if (highscore > 0)
-        {
-            SetHighScore(highscore);
-        }
+
     }
 
     public void ComputeScore(int delta)
@@ -53,7 +49,7 @@ public class MyScoreSingleton : MonoBehaviour
     {
         // Update the highscore.
         highscore = value;
-
+        highscoreName = currentName;
         // Save the highscore to player prefs.
         PlayerPrefs.SetInt("Highscore", highscore);
         PlayerPrefs.SetString("HighscoreName", currentName);

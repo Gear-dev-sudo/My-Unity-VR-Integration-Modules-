@@ -18,12 +18,12 @@ public class HighscoreDisplay : MonoBehaviour
     {
         myScoreSingleton = GameObject.FindObjectOfType<MyScoreSingleton>();
         scoreText = GetComponent<TMPro.TMP_Text>();
-        scoreText.text = ("High Score: "+myScoreSingleton.highscore+" Record Holder:"+myScoreSingleton.highscoreName+"\n"+ "Score: " + myScoreSingleton.score );
+        scoreText.text = ("High Score: "+myScoreSingleton.highscore+"\n"+" Record Holder: "+myScoreSingleton.highscoreName + "\n" + "\n" + "Score: " + myScoreSingleton.score );
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = ("High Score: " + myScoreSingleton.highscore + " Record Holder:" + myScoreSingleton.highscoreName+ "\n" + "Score: " + myScoreSingleton.score);
+        scoreText.text = ("High Score: " + myScoreSingleton.highscore + "\n" +  " Record Holder: " + myScoreSingleton.highscoreName+ "\n" + "\n" + "Score: " + myScoreSingleton.score);
     }
 }

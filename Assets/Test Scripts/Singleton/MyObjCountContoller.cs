@@ -11,7 +11,7 @@ using UnityEngine;
 
 
 
-    public class MySecurityCamContoller : my_unity_integration.GenericSingletonClass<MySecurityCamContoller>
+    public class MyObjCountContoller : MonoBehaviour
 {
         
         public int camCount;

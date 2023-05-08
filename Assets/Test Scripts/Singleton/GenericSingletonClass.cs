@@ -47,3 +47,31 @@ namespace my_unity_integration
         }
     }
 }
+
+/*docs:
+ * 
+ * Here is an example of how you might use the MySingleton class in your Unity project:
+
+        public class MySingleton : GenericSingletonClass<MySingleton>
+        {
+            public int myValue;
+
+            public void MyMethod()
+            {
+                // Your code here
+            }
+        }
+
+        public class MyOtherClass : MonoBehaviour
+        {
+            void Start()
+            {
+                // Access the singleton instance
+                MySingleton mySingleton = MySingleton.Instance;
+
+                // Use the singleton instance
+                mySingleton.myValue = 10;
+                mySingleton.MyMethod();
+            }
+        }
+*/

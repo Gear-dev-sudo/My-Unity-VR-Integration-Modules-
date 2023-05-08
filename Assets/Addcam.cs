@@ -6,7 +6,7 @@ public class Addcam : MonoBehaviour
 {
     [SerializeField]
     [Tooltip("Assign the MySecurityCamContoller object")]
-    private MySecurityCamContoller securityCamController;
+    private MyObjCountContoller securityCamController;
 
     [SerializeField]
     [Tooltip("Assign the two Text(TMP) objects")]
@@ -19,12 +19,12 @@ public class Addcam : MonoBehaviour
     private void Start()
     {
         // Find the MySecurityCamController object in the scene
-        securityCamController = GameObject.FindObjectOfType<MySecurityCamContoller>();
+        securityCamController = GameObject.FindObjectOfType<MyObjCountContoller>();
 
         // If the MySecurityCamController object is not found, log a warning
         if (securityCamController == null)
         {
-            Debug.LogWarning("MySecurityCamController object not found in the scene!");
+            Debug.LogWarning("ObjectCountController object not found in the scene!");
         }
         else
         {
