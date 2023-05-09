@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using my_unity_integration;
 
 public class XRGrabInteractableDualAttach : XRGrabOffsetInteractable
 {

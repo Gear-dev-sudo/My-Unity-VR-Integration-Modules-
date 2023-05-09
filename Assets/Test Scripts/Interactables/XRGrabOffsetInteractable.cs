@@ -1,7 +1,9 @@
 using System;
+using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.XR.Interaction.Toolkit;
 
-namespace UnityEngine.XR.Interaction.Toolkit
+namespace my_unity_integration
 {
     /// <summary>
     /// Interactable component that allows basic "grab" functionality.

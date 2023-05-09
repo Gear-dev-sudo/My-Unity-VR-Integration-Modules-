@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="oWx1CMlj1S1pF4CIYpkc" name="Page-1">
-        <mxGraphModel dx="1828" dy="924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="2000" math="0" shadow="0">
+        <mxGraphModel dx="7067" dy="1720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="2000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -148,7 +148,7 @@
                         <mxPoint x="1245" y="1210" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="217" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="31" target="215">
+                <mxCell id="217" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="31" target="215" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="1370" y="1170"/>
@@ -298,7 +298,7 @@
                 <mxCell id="62" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;Dynamic&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&amp;nbsp;Move&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;Provider&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="1901.25" y="1220" width="100" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="63" value="Update the camera position in each frame, rather than during only position change" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                <mxCell id="63" value="Multiple Continuous Move Options (HeadRelative\&lt;br&gt;HandRelative)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1893.75" y="1290" width="115" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="65" value="Custom Character&lt;br&gt;Controller Driver" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
@@ -493,16 +493,16 @@
                     <mxGeometry x="1105" y="1730" width="160" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="162" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
-                    <mxGeometry x="2150" y="1520" width="250" height="340" as="geometry"/>
+                    <mxGeometry x="2090" y="1520" width="340" height="340" as="geometry"/>
                 </mxCell>
                 <mxCell id="163" value="&lt;h1&gt;Scripts For UI&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" parent="1" vertex="1">
-                    <mxGeometry x="2160" y="1555" width="240" height="75" as="geometry"/>
+                    <mxGeometry x="2105" y="1555" width="240" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="164" value="NonNative&lt;br&gt;Keyboard" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B09500;fillColor=#e3c800;gradientDirection=north;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="2230" y="1660" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="2142.5" y="1660" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="165" value="Utilizes the keyboard model from MRTK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="2200" y="1750" width="160" height="50" as="geometry"/>
+                    <mxGeometry x="2112.5" y="1750" width="160" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="180" value="Classes Tailored for Specialized use in Prefabs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="2285" y="170" width="100" height="30" as="geometry"/>
@@ -594,17 +594,23 @@
                 <mxCell id="214" value="Converts The Common Stl files to FBX files for Unity&lt;br&gt;(WITH GUI)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1840" y="1760" width="160" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="215" value="CameraMaterial" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                <mxCell id="215" value="CameraMaterial" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="1310" y="1210" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="216" value="Create New Instances&lt;br&gt;Of a Texture and could force that texture into a material" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="216" value="Create New Instances&lt;br&gt;Of a Texture and could force that texture into a material" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1295" y="1290" width="160" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="218" value="Pen" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                <mxCell id="218" value="Pen" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="1050" y="1000" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="219" value="Pen" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                <mxCell id="219" value="WhiteBoard" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="1200" y="1000" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="220" value="ShowKeyboard" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B09500;fillColor=#e3c800;gradientDirection=north;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="2300" y="1660" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="221" value="Controlls the KeyBoard&lt;br&gt;With Custom Postion Offset" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="2275" y="1750" width="160" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
