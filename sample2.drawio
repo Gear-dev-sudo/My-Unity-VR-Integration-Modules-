@@ -1,26 +1,156 @@
 <mxfile host="65bd71144e">
     <diagram id="B9QbOq83ExlrpzbBQ1tk" name="Page-1">
-        <mxGraphModel dx="4570" dy="1290" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="2000" math="0" shadow="0">
+        <mxGraphModel dx="3036" dy="1198" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="2000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="382" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
-                    <mxGeometry x="1680" y="1520" width="340" height="340" as="geometry"/>
+                <mxCell id="387" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=default;fillColor=default;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="1220" width="1510" height="340" as="geometry"/>
                 </mxCell>
-                <mxCell id="383" value="&lt;h1&gt;Scripts For UI&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" vertex="1" parent="1">
-                    <mxGeometry x="1695" y="1555" width="240" height="75" as="geometry"/>
+                <mxCell id="388" value="&lt;h1&gt;Scripts For Managing Scenes&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;glass=0;fillStyle=solid;" vertex="1" parent="1">
+                    <mxGeometry x="265" y="1232.51" width="250" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="384" value="NonNative&lt;br&gt;Keyboard" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B09500;fillColor=#e3c800;gradientDirection=north;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="1732.5" y="1660" width="100" height="60" as="geometry"/>
+                <mxCell id="389" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="401">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="315" y="1357.51"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="385" value="Utilizes the keyboard model from MRTK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="1702.5" y="1750" width="160" height="50" as="geometry"/>
+                <mxCell id="390" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="403">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="450" y="1367.51"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="386" value="ShowKeyboard" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B09500;fillColor=#e3c800;gradientDirection=north;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="1890" y="1660" width="100" height="60" as="geometry"/>
+                <mxCell id="391" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="405">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="387" value="Controlls the KeyBoard&lt;br&gt;With Custom Postion Offset" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="1865" y="1750" width="160" height="50" as="geometry"/>
+                <mxCell id="392" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="407">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="730" y="1357.51"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="393" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="409">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="865" y="1367.51"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="394" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="411">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="995" y="1367.51"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="395" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="415">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1125" y="1367.51"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="396" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="413">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1255" y="1367.51"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="397" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="417">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1386" y="1367.51"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="398" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="419">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1515" y="1367.51"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="399" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="400" target="421">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1650" y="1357.51"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="400" value="MonoBehaviour" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+                    <mxGeometry x="527.5" y="1260.01" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="401" value="Generic&lt;br&gt;SingletonClass&amp;lt;T&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="255" y="1395.01" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="402" value="Class to help with Data Persistence between Scenes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="248" y="1465.01" width="134" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="403" value="LoadScene" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="1397.51" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="404" value="Class That Implements Scene Loading (Could be hooked into UI)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="389" y="1467.51" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="405" value="ShowFPS" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="1395.01" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="406" value="Implemented To a Canvas to show realtime FGI and Frame Rate" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="1477.51" width="115" height="57.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="407" value="SpawnFromList" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="1395.01" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="408" value="Spawn designated Object From a list&amp;nbsp; of Preconfigured Prefabs, Could Designate a Spwan Point." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="679" y="1490.01" width="106" height="47.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="409" value="Object Spawner" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="805" y="1395.01" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="410" value="Spawn designated Object From a list&amp;nbsp; of Preconfigured Prefabs, Could Designate a Spwan Point." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="810" y="1485.63" width="110" height="53.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="411" value="ControllerRecorder" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="935" y="1397.51" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="412" value="Log the Controller Button Presses&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="937.5" y="1470" width="115" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="413" value="BudgetController" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="1195" y="1397.51" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="414" value="Have Configurable Budget and prompt when Budget is Exceeded" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1200" y="1468.76" width="115" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="415" value="MyScoreSingleton" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="1065" y="1397.51" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="416" value="Singleton that manages keeping the current score and Highscore. Use Persistence to sync in local disk." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1080" y="1470.01" width="115" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="417" value="MyObjCountController" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="1326.25" y="1395.01" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="418" value="Have Configurable Budget and prompt when Budget is Exceeded" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1331.25" y="1467.51" width="115" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="419" value="AddObj(AddCam)" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="1455" y="1395.01" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="420" value="Hook into Count Controllers and set/get the Count" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1455" y="1465.0100000000002" width="115" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="421" value="LightingManager" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillStyle=solid;strokeColor=#B20000;fillColor=#e51400;gradientDirection=north;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="1590" y="1395.01" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="422" value="Switches the Day/Night and Simulate Time Flow through lights&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1595" y="1465.0100000000002" width="115" height="90" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
